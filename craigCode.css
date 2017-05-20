@@ -1,0 +1,279 @@
+.craigCode
+{
+    font-family: Helvetica;
+
+    margin: 0 0 0 0;
+    width: 100%;
+}
+
+.craigCode .header
+{
+    z-index: 2;
+    position: fixed;
+    height: 75px;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    box-shadow: 0 0 20px #000000;
+}
+
+.craigCode .header h1
+{
+    font-family: "Orbitron";
+    font-size: 50px;
+    
+    z-index: 2;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    padding: 0 0 0 0;
+    margin: 0 0 0 10px;
+}
+
+.craigCode .header canvas
+{
+    background-color: #30C030;
+
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.craigCode .navigation
+{
+    z-index: 1;
+    position: fixed;
+    width: 20%;
+    top: 75px;
+    left: 0px;
+    bottom: 25px;
+
+    box-shadow: 0 0 20px #000000;
+    
+    overflow-y: auto;
+}
+
+.craigCode .navigation .pages
+{
+    margin: 10px;
+}
+
+.craigCode .navigation .pages .menuGroup
+{
+    display: none;
+}
+
+.craigCode .navigation .pages .topic
+{
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+}
+
+@-webkit-keyframes menuhover
+{
+    from { box-shadow: 0 0 0 #000000; }
+    to { box-shadow: 2px 2px 10px #000000; }
+}
+
+@keyframes menuhover
+{
+    from 
+    { 
+        box-shadow: 0 0 0 #000000; 
+        font-size: 100%;
+        background-color: #FFFFFF;
+    }
+
+    to 
+    { 
+        box-shadow: 0px 10px 20px #777777;
+        font-size: 110%;
+        background-color: #EEEEEE;
+    }
+}
+
+.craigCode .navigation .pages .topic:hover
+{
+    z-index: 4;
+    -webkit-animation: hover 0.1s steps(2) forwards;
+    animation: menuhover 0.1s steps(2) forwards;
+}
+
+.craigCode .navigation .pages .topic .text
+{
+    margin: 20px;
+}
+
+.craigCode .navigation .pages .sub-topic
+{
+    margin: 0 0 0 10px
+}
+
+.craigCode .navigation .pages .sub-sub-topic
+{
+    margin: 0 0 0 20px
+}
+
+.craigCode .navigation .pages .sub-sub-sub-topic
+{
+    margin: 0 0 0 30px
+}
+
+.craigCode .content
+{
+    z-index: 0;
+    position: fixed;
+    width: 80%;
+    top: 75px;
+    right: 0px;
+    bottom: 25px;
+    
+    overflow-y: auto;
+}
+
+.craigCode .content .page
+{
+    display: none;
+
+    margin: 10px;
+}
+
+.craigCode .content .page table
+{
+    border-collapse: collapse;
+
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.craigCode .content .page table tr th
+{
+    border-style: solid;
+    border-color: #000000;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+
+    font-style: bold;
+}
+
+.craigCode .content .page table tr td
+{
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+}
+
+.craigCode .content .page .image
+{
+    box-shadow: 0 0 10px inset;
+    border-radius: 5px;
+
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.craigCode .content .image hr
+{
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 0;
+    margin-top: 0;
+}
+
+.craigCode .content .page .image .title
+{
+    width:90%;
+    padding: 5px 5% 5px 5%;
+
+    text-align: center;
+}
+
+.craigCode .content .page .image img
+{
+    width: 90%;
+    margin: 5px 5% 5px 5%;
+}
+
+.craigCode .content .page .image .caption
+{
+    width: 90%;
+    padding: 5px 5% 10px 5%;
+}
+
+.craigCode .content .page .variable
+{
+    height: 1em;
+}
+
+.craigCode .content .page .equation
+{
+    box-shadow: 0 0 10px inset;
+    border-radius: 5px;
+
+    padding: 10px;
+    margin: 10px 50px 10px 50px;
+}
+
+.craigCode .content .page .equation .img
+{
+    height: 20px;
+}
+
+.craigCode .content .page .equation .imgDouble
+{
+    height: 40px;
+}
+
+.craigCode .content .page .equation .imgDoubleHalf
+{
+    height: 47px;
+}
+
+.craigCode .content .page .equation .imgTripple
+{
+    height: 59px;
+}
+
+.craigCode .content .page .code
+{
+    padding: 10px;
+    margin: 5px;
+
+    box-shadow: 0 0 5px inset;
+    border-radius: 5px;
+}
+
+.craigCode .footer
+{
+    background-color: #30C030;
+
+    padding: 0 0 0 0;
+
+    z-index: 2;
+    position: fixed;
+    height: 25px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    box-shadow: 0 0 20px #000000;
+}
+
+.craigCode .footer h4
+{
+    font-family: "Orbitron";
+    font-size: 15px;
+    text-align: right;
+
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    margin: 0 10px 0 10px;
+}
