@@ -118,18 +118,6 @@
                             </h3>
                         </div>
                     </div>
-
-                    <!--
-                    <div id="menu-p-c" class="menuGroup">
-                        <div class="topic sub-sub-topic">
-                            <div class="text" onclick="showPage('page-p-c-c');">
-                                <h3>
-                                    Cluster
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    -->
                 </div>
 
                 <div class="topic">
@@ -139,27 +127,6 @@
                         </h2>
                     </div>
                 </div>
-
-                <!--
-                <div id="menu-a" class="menuGroup">
-                    <div class="topic sub-topic">
-                        <div class="text" onclick="showPage('page-a-m')">
-                            <h3>
-                                Me
-                            </h3>
-                        </div>
-                    </div>
-
-                    <div class="topic sub-topic">
-                        <div class="text" onclick="showPage('page-a-c')">
-                            <h3>
-                                Contact
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                -->
-
             </div>
         </div>
 
@@ -236,7 +203,7 @@
 
                         <hr />
 
-                        <img src="ikSide.png" />
+                        <img src="sac/imgs/ikSide.png" />
 
                         <hr />
                         
@@ -262,7 +229,7 @@
 
                         <hr />
 
-                        <img src="ikTop.png" />
+                        <img src="sac/imgs/ikTop.png" />
 
                         <hr />
 
@@ -285,113 +252,116 @@
                     <br />
 
                     &nbsp;&nbsp;&nbsp;&nbsp;First we need to find the base angle 
-                    (<img class="variable" src="eqn-var-theta_b.png" />). This can be done using the
-                    inverse tangent as
+                    (<img class="variable" src="sac/imgs/eqn-var-theta_b.png" />). This can be done 
+                    using the inverse tangent as
 
                     <div class="equation">
-                        <img class="img" src="eqn-00.png" />
+                        <img class="img" src="sac/imgs/eqn-00.png" />
                     </div>
 
-                    &nbsp;&nbsp;&nbsp;&nbsp;Where <img class="variable" src="eqn-var-x.png" /> and 
-                    <img class="variable" src="eqn-var-y.png" /> are the given end-effector 
-                    goals for their respective axis.
+                    &nbsp;&nbsp;&nbsp;&nbsp;Where 
+                    <img class="variable" src="sac/imgs/eqn-var-x.png" /> and 
+                    <img class="variable" src="sac/imgs/eqn-var-y.png" /> are the given end-
+                    effector goals for their respective axis.
 
                     <br />
                     <br />
 
                     &nbsp;&nbsp;&nbsp;&nbsp;The projected height 
-                    (<img class="variable" src="eqn-var-d_4z.png" />) and radius 
-                    (<img class="variable" src="eqn-var-d_4r.png" />) of the
-                    <img class="variable" src="eqn-var-d_4.png" /> link can be found using the input
-                    angle <img class="variable" src="eqn-var-theta_pitch.png" /> by the equations
+                    (<img class="variable" src="sac/imgs/eqn-var-d_4z.png" />) and radius 
+                    (<img class="variable" src="sac/imgs/eqn-var-d_4r.png" />) of the
+                    <img class="variable" src="sac/imgs/eqn-var-d_4.png" /> link can be found using 
+                    the input angle <img class="variable" src="sac/imgs/eqn-var-theta_pitch.png" /> 
+                    by the equations
 
                     <div class="equation">
-                        <img class="img" src="eqn-01.png" />
+                        <img class="img" src="sac/imgs/eqn-01.png" />
                     </div>
 
                     and
 
                     <div class="equation">
-                        <img class="img" src="eqn-02.png" />
+                        <img class="img" src="sac/imgs/eqn-02.png" />
                     </div>
 
                     &nbsp;&nbsp;&nbsp;&nbsp;The total radius 
-                    (<img class="variable" src="eqn-var-r.png" />) from the center of the robot to 
-                    the end-effector can be found by using the Pythagorean Theorem as
+                    (<img class="variable" src="sac/imgs/eqn-var-r.png" />) from the center of the 
+                    robot to the end-effector can be found by using the Pythagorean Theorem as
 
                     <div class="equation">
-                        <img class="imgDouble" src="eqn-03.png" />
+                        <img class="imgDouble" src="sac/imgs/eqn-03.png" />
                     </div>
 
                     &nbsp;&nbsp;&nbsp;&nbsp;The next variable which needs to be found is the 
                     difference in height from the shoulder joint 
-                    (<img class="variable" src="eqn-var-theta_s.png" />) to the wrist pitch joint 
-                    (<img class="variable" src="eqn-var-theta_p.png" />) can be found by
+                    (<img class="variable" src="sac/imgs/eqn-var-theta_s.png" />) to the wrist 
+                    pitch joint (<img class="variable" src="sac/imgs/eqn-var-theta_p.png" />) can 
+                    be found by
 
                     <div class="equation">
-                        <img class="img" src="eqn-04.png" />
+                        <img class="img" src="sac/imgs/eqn-04.png" />
                     </div>
 
                     &nbsp;&nbsp;&nbsp;&nbsp;The radius between these points can also be found using
 
                     <div class="equation">
-                        <img class="img" src="eqn-05.png" />
+                        <img class="img" src="sac/imgs/eqn-05.png" />
                     </div>
 
                     &nbsp;&nbsp;&nbsp;&nbsp;Again using Pythagorean Theorem the total distance
-                    (<img class="variable" src="eqn-var-e.png">) between these joints can be found, 
-                    written as
+                    (<img class="variable" src="sac/imgs/eqn-var-e.png">) between these joints can 
+                    be found, written as
 
                     <div class="equation">
-                        <img class="imgDouble" src="eqn-06.png" />
+                        <img class="imgDouble" src="sac/imgs/eqn-06.png" />
                     </div>
 
                     &nbsp;&nbsp;&nbsp;&nbsp;The elbow joint 
-                    (<img class="variable" src="eqn-var-theta_e.png" />) can be found using the
-                    equation
+                    (<img class="variable" src="sac/imgs/eqn-var-theta_e.png" />) can be found 
+                    using the equation
 
                     <div class="equation">
-                        <img class="imgTripple" src="eqn-07.png" />
+                        <img class="imgTripple" src="sac/imgs/eqn-07.png" />
                     </div>
 
                     &nbsp;&nbsp;&nbsp;&nbsp;Since all the distances are known for the elbow triangle
                     and the wrist pitch elevation triangle, The 
-                    <img class="variable" src="eqn-var-theta_e_z.png" /> and the 
-                    <img class="variable" src="eqn-var-theta_a.png" /> angles can be found using 
-                    the Law of Cosines as
+                    <img class="variable" src="sac/imgs/eqn-var-theta_e_z.png" /> and the 
+                    <img class="variable" src="sac/imgs/eqn-var-theta_a.png" /> angles can be found 
+                    using the Law of Cosines as
 
                     <div class="equation">
-                        <img class="imgDoubleHalf" src="eqn-08.png" />
+                        <img class="imgDoubleHalf" src="sac/imgs/eqn-08.png" />
                     </div>
 
                     and
 
                     <div class="equation">
-                        <img class="imgDoubleHalf" src="eqn-09.png" />
+                        <img class="imgDoubleHalf" src="sac/imgs/eqn-09.png" />
                     </div>
 
                     &nbsp;&nbsp;&nbsp;&nbsp;The shoulder joint 
-                    (<img class="variable" src="eqn-var-theta_s.png" />) can be found by using the
-                    angles found in the previous two equations with
+                    (<img class="variable" src="sac/imgs/eqn-var-theta_s.png" />) can be found by 
+                    using the angles found in the previous two equations with
 
                     <div class="equation">
-                        <img class="img" src="eqn-10.png" />
+                        <img class="img" src="sac/imgs/eqn-10.png" />
                     </div>
 
                     &nbsp;&nbsp;&nbsp;&nbsp;The wrist pitch joint 
-                    (<img class="variable" src="eqn-var-theta_p.png" />) can be found using the 
-                    surrounding known joints. This equation can be written as
+                    (<img class="variable" src="sac/imgs/eqn-var-theta_p.png" />) can be found 
+                    using the surrounding known joints. This equation can be written as
 
                     <div class="equation">
-                        <img class="img" src="eqn-11.png" />
+                        <img class="img" src="sac/imgs/eqn-11.png" />
                     </div>
 
                     &nbsp;&nbsp;&nbsp;&nbsp;The wrist roll joint
-                    (<img class="variable" src="eqn-var-theta_r.png" />) joint is given by the 
-                    input as
+                    (<img class="variable" src="sac/imgs/eqn-var-theta_r.png" />) joint is given by 
+                    the input as
 
                     <div class="equation">
-                        <img class="img" src="eqn-12.png" />
+                        <img class="img" src="sac/imgs/eqn-12.png" />
                     </div>
                 </p>
             </div>
@@ -456,7 +426,7 @@
 
                         <hr />
 
-                        <img src="RosTopology.png" />
+                        <img src="sac/imgs/RosTopology.png" />
 
                         <hr />
                         
@@ -479,7 +449,7 @@
 
                         <hr />
 
-                        <img src="controllers.png" />
+                        <img src="sac/imgs/controllers.png" />
 
                         <hr />
                         
@@ -498,7 +468,7 @@
 
                         <hr />
 
-                        <img src="translators.png" />
+                        <img src="sac/imgs/translators.png" />
 
                         <hr />
                         
@@ -517,7 +487,7 @@
 
                         <hr />
 
-                        <img src="drivers.png" />
+                        <img src="sac/imgs/drivers.png" />
 
                         <hr />
                         
@@ -793,7 +763,7 @@
 
                 <hr />
 
-                <a href="sac.pdf">
+                <a href="sac/sac.pdf">
                     A Robotics Framework for Simulation and Control of a Robotic Arm for Use in 
                     Higher Education
                 </a>
@@ -834,12 +804,12 @@
                             Kinetic
                         </td>
                         <td>
-                            <a href="sac_setup-Kinetic.zip">
+                            <a href="sac/kinetic/sac_setup-Kinetic.zip">
                                 Download
                             </a>
                         </td>
                         <td>
-                            <a href="sac_setup-Kinetic.tar.gz">
+                            <a href="sac/kinetic/sac_setup-Kinetic.tar.gz">
                                 Download
                             </a>
                         </td>
@@ -876,12 +846,12 @@
                             Kinetic
                         </td>
                         <td>
-                            <a href="andreas_arm_config-Kinetic.zip">
+                            <a href="sac/kinetic/andreas_arm_config-Kinetic.zip">
                                 Download
                             </a>
                         </td>
                         <td>
-                            <a href="andreas_arm_config-Kinetic.tar.gz">
+                            <a href="sac/kinetic/andreas_arm_config-Kinetic.tar.gz">
                                 Download
                             </a>
                         </td>
@@ -895,12 +865,12 @@
                             Kinetic
                         </td>
                         <td>
-                            <a href="sac_config-Kinetic.zip">
+                            <a href="sac/kinetic/sac_config-Kinetic.zip">
                                 Download
                             </a>
                         </td>
                         <td>
-                            <a href="sac_config-Kinetic.tar.gz">
+                            <a href="sac/kinetic/sac_config-Kinetic.tar.gz">
                                 Download
                             </a>
                         </td>
@@ -914,12 +884,12 @@
                             Kinetic
                         </td>
                         <td>
-                            <a href="sac_controllers-Kinetic.zip">
+                            <a href="sac/kinetic/sac_controllers-Kinetic.zip">
                                 Download
                             </a>
                         </td>
                         <td>
-                            <a href="sac_controllers-Kinetic.tar.gz">
+                            <a href="sac/kinetic/sac_controllers-Kinetic.tar.gz">
                                 Download
                             </a>
                         </td>
@@ -933,12 +903,12 @@
                             Kinetic
                         </td>
                         <td>
-                            <a href="sac_description-Kinetic.zip">
+                            <a href="sac/kinetic/sac_description-Kinetic.zip">
                                 Download
                             </a>
                         </td>
                         <td>
-                            <a href="sac_description-Kinetic.tar.gz">
+                            <a href="sac/kinetic/sac_description-Kinetic.tar.gz">
                                 Download
                             </a>
                         </td>
@@ -952,12 +922,12 @@
                             Kinetic
                         </td>
                         <td>
-                            <a href="sac_drivers-Kinetic.zip">
+                            <a href="sac/kinetic/sac_drivers-Kinetic.zip">
                                 Download
                             </a>
                         </td>
                         <td>
-                            <a href="sac_drivers-Kinetic.tar.gz">
+                            <a href="sac/kinetic/sac_drivers-Kinetic.tar.gz">
                                 Download
                             </a>
                         </td>
@@ -971,12 +941,12 @@
                             Kinetic
                         </td>
                         <td>
-                            <a href="sac_gazebo-Kinetic.zip">
+                            <a href="sac/kinetic/sac_gazebo-Kinetic.zip">
                                 Download
                             </a>
                         </td>
                         <td>
-                            <a href="sac_gazebo-Kinetic.tar.gz">
+                            <a href="sac/kinetic/sac_gazebo-Kinetic.tar.gz">
                                 Download
                             </a>
                         </td>
@@ -990,12 +960,12 @@
                             Kinetic
                         </td>
                         <td>
-                            <a href="sac_launch-Kinetic.zip">
+                            <a href="sac/kinetic/sac_launch-Kinetic.zip">
                                 Download
                             </a>
                         </td>
                         <td>
-                            <a href="sac_launch-Kinetic.tar.gz">
+                            <a href="sac/kinetic/sac_launch-Kinetic.tar.gz">
                                 Download
                             </a>
                         </td>
@@ -1009,12 +979,12 @@
                             Kinetic
                         </td>
                         <td>
-                            <a href="sac_msgs-Kinetic.zip">
+                            <a href="sac/kinetic/sac_msgs-Kinetic.zip">
                                 Download
                             </a>
                         </td>
                         <td>
-                            <a href="sac_msgs-Kinetic.tar.gz">
+                            <a href="sac/kinetic/sac_msgs-Kinetic.tar.gz">
                                 Download
                             </a>
                         </td>
@@ -1028,12 +998,12 @@
                             Kinetic
                         </td>
                         <td>
-                            <a href="sac_translators-Kinetic.zip">
+                            <a href="sac/kinetic/sac_translators-Kinetic.zip">
                                 Download
                             </a>
                         </td>
                         <td>
-                            <a href="sac_translators-Kinetic.tar.gz">
+                            <a href="sac/kinetic/sac_translators-Kinetic.tar.gz">
                                 Download
                             </a>
                         </td>
@@ -1047,12 +1017,12 @@
                             Kinetic
                         </td>
                         <td>
-                            <a href="scorbot_config-Kinetic.zip">
+                            <a href="sac/kinetic/scorbot_config-Kinetic.zip">
                                 Download
                             </a>
                         </td>
                         <td>
-                            <a href="scorbot_config-Kinetic.tar.gz">
+                            <a href="sac/kinetic/scorbot_config-Kinetic.tar.gz">
                                 Download
                             </a>
                         </td>
@@ -1069,18 +1039,18 @@
 
                 <p>
                     &nbsp;&nbsp;&nbsp;&nbsp;This project is the awsome website you see before you 
-                    now. This site has been created completely from scratch using simple javascript, 
-                    css3, HTML5, and some fonts from Google. This allows the site to be developed 
-                    using any editor (I am using vim), and The site can be served from any type of 
-                    server, including a Python server.  
+                    now. This site has been created completely from scratch using simple 
+                    javascript, css3, HTML5, and some fonts from Google. This allows the site to be 
+                    developed using any editor (I am using vim), and The site can be served from 
+                    any type of server, including a Python server.  
 
                     <br />
                     <br />
 
-                    &nbsp;&nbsp;&nbsp;&nbsp;Though this site should be awsome enough to amaze. It is 
-                    not the end. This site is also a facade for a Raspberry Pi cluster which uses ROS
-                    for communication in the cluster. When this is completed to a reasonable state 
-                    the packages for will be posted to my GitHub page.
+                    &nbsp;&nbsp;&nbsp;&nbsp;Though this site should be awsome enough to amaze. It 
+                    is not the end. This site is also a facade for a Raspberry Pi cluster which 
+                    uses ROS for communication in the cluster. When this is completed to a 
+                    reasonable state the packages for will be posted to my GitHub page.
                 </p>
             </div>
 
@@ -1094,9 +1064,9 @@
                 <p>
                     Hi, I am a software and hardware developer in the Embedded Systems arena. I try 
                     to make projects which interrest me, and that are hopefully useful for others.
-                    All of my projects are intended to be open-source and freely available to anyone.
-                    The only parts of my projects I do not post are pieces which are used for 
-                    security.
+                    All of my projects are intended to be open-source and freely available to 
+                    anyone. The only parts of my projects I do not post are pieces which are used 
+                    for security.
 
                     <br />
                     <br />
@@ -1106,30 +1076,6 @@
                     <br />
 
                     Email: <a href="craigc@craigcode1010.com">craigc@craigcode1010.com</a>
-                </p>
-            </div>
-
-            <div id="page-a-m" class="page">
-                <h1>
-                    Me
-                </h1>
-
-                <hr />
-
-                <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                </p>
-            </div>
-
-            <div id="page-a-c" class="page">
-                <h1>
-                    Contact
-                </h1>
-
-                <hr />
-
-                <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
                 </p>
             </div>
         </div>
