@@ -597,8 +597,14 @@ function circuitDraw()
 var curPage = "page-h";
 function showPage(page)
 {
-    document.getElementById(curPage).style.display = "none";
-    document.getElementById(page).style.display = "block";
+    var oldpage = document.getElementById(curPage);
+    //oldpage.className = "content content-out";
+    oldpage.style.display = "none";
+
+    var newpage = document.getElementById(page);
+    //newpage.className = "content content-in";
+    newpage.style.display = "block";
+    
     curPage = page;
 }
 
