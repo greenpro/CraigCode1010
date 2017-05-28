@@ -104,6 +104,14 @@
                         </div>
 
                         <div class="topic sub-sub-topic">
+                            <div class="text" onclick="showPage('page-p-s-k')">
+                                <h4>
+                                    Known Issues
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="topic sub-sub-topic">
                             <div class="text" onclick="showPage('page-p-s-do')">
                                 <h4>
                                     Downloads
@@ -734,6 +742,56 @@
                             include launch files from the immediate package.
                         </li>
                     </ol>
+                </p>
+            </div>
+
+            <div id="page-p-s-k" class="page page-in">
+                <h1>
+                    Known Issues
+                </h1>
+
+                <hr />
+
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;There are a few known issues with the project currently,
+                    most of which stem from the fact that the project has not been implemented on
+                    real hardware yet.
+
+                    <br />
+
+                    <h3>
+                        Feedback from Services
+                    </h3>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;The service drivers are not giving feedback from the 
+                    robot and leaves default values. This feature has worked in tests on other 
+                    systems
+
+                    <br />
+
+                    <h3>
+                        Stepper Motor Equations
+                    </h3>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;Since the system has not been used with the real robot
+                    the angle to step conversion for each motor has not been verified yet, and is
+                    likely not correct.
+
+                    <br />
+
+                    <h3>
+                        Simulation Object Physics
+                    </h3>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;The Gazebo simulor does not currently work with scene
+                    objects very well. Sometimes the objects do not fall completely, and sometimes
+                    they fall to far into the other objects rather than resting on top. This is 
+                    most likely a Gazebo issue as it is random and will sometimes correct itself
+                    after an object is picked up or moved. The glytch causes an issue with the
+                    gripper as sometimes it cannot reach the object to be picked up, and sometimes
+                    it will pick up the object below the target object. The unreliable grip issue
+                    may possibly be solved by using the MoveIt! package, though this will not solve 
+                    the sinking/dropping issue.
                 </p>
             </div>
 
