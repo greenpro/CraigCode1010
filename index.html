@@ -71,6 +71,16 @@
                             </div>
                         </div>
 
+                        <!--
+                        <div class="topic sub-sub-topic">
+                            <div class="text" onclick="showPage('page-p-s-u')">
+                                <h4>
+                                    Version Upgrade
+                                </h4>
+                            </div>
+                        </div>
+                        -->
+
                         <div class="topic sub-sub-topic">
                             <div class="text" onclick="showPage('page-p-s-b')">
                                 <h4>
@@ -610,6 +620,29 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;The setup script may be easily modified to download a 
                 specific version either from the downloads page of this project or from the GitHub 
                 pages of each package.
+            </div>
+
+            <div id="page-p-s-u" class="page page-in">
+                <h1>
+                    SAC Lunar Upgrade
+                </h1>
+
+                <hr />
+
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;The upgrade can be run only if SAC Kinetic is already
+                    installed. To upgrade SAC to the next version run
+
+                    <div class="code">
+                        <code>
+                            ./setupPull.sh
+                            ./lunarUpgrade.sh
+                        </code>
+                    </div>
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;If you are looking at the source code for this site, note 
+                    that this has not been completely implemented and is not ready for running yet.
+                </p>
             </div>
 
             <div id="page-p-s-b" class="page page-in">
