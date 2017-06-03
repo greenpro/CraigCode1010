@@ -151,8 +151,8 @@
 
 .craig-code .page-in
 {
-    -webkit-animation: pagein 0.1s steps(100) forwards;
-    animation: pagein 0.1s steps(100) forwards;
+    -webkit-animation: pagein 0.3s steps(100) forwards;
+    animation: pagein 0.3s steps(100) forwards;
 }
 
 .craig-code .content
