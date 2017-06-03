@@ -621,7 +621,10 @@ function showMenu(subMenu, level)
         document.getElementById(curSubSubMenu).style.display = "none";
 
     if (curSubSubSubMenu && level <= 2)
+    {
         document.getElementById(curSubSubSubMenu).style.display = "none";
+
+    }
 
     if (subMenu)
         document.getElementById(subMenu).style.display = "block";
@@ -630,10 +633,12 @@ function showMenu(subMenu, level)
     {
         curSubMenu = subMenu;
         curSubSubMenu = null;
+        curSubSubSubMenu = null;
     }
     else if (level == 1)
     {
         curSubSubMenu = subMenu;
+        curSubSubSubMenu = null;
     }
     else if (level == 2)
     {
