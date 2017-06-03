@@ -37,7 +37,7 @@
                     </div>
                 </div>
 
-                <div id="menu-p" class="menuGroup">
+                <div id="menu-p" class="menu-group">
                     <div class="topic sub-topic">
                         <div class="text" onclick="showPage('page-p-s'); showMenu('menu-p-s', 1)">
                             <h3>
@@ -46,7 +46,7 @@
                         </div>
                     </div>
 
-                    <div id="menu-p-s" class="menuGroup">
+                    <div id="menu-p-s" class="menu-group">
                         <div class="topic sub-sub-topic">
                             <div class="text" onclick="showPage('page-p-s-s')">
                                 <h4>
@@ -64,22 +64,39 @@
                         </div>
 
                         <div class="topic sub-sub-topic">
-                            <div class="text" onclick="showPage('page-p-s-in')">
+                            <div class="text" 
+                                onclick="showPage('page-p-s-in'); showMenu('menu-p-s-in', 2)">
                                 <h4>
-                                    Installation
+                                    Installation and Upgrading
                                 </h4>
                             </div>
                         </div>
 
-                        <!--
-                        <div class="topic sub-sub-topic">
-                            <div class="text" onclick="showPage('page-p-s-u')">
-                                <h4>
-                                    Version Upgrade
-                                </h4>
+                        <div id="menu-p-s-in" class="menu-group">
+                            <div class="topic sub-sub-sub-topic">
+                                <div class="text" onclick="showPage('page-p-s-in-l')">
+                                    <h5>
+                                        Latest
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="topic sub-sub-sub-topic">
+                                <div class="text" onclick="showPage('page-p-s-in-lu')">
+                                    <h5>
+                                        Lunar
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="topic sub-sub-sub-topic">
+                                <div class="text" onclick="showPage('page-p-s-in-k')">
+                                    <h5>
+                                        Kinetic
+                                    </h5>
+                                </div>
                             </div>
                         </div>
-                        -->
 
                         <div class="topic sub-sub-topic">
                             <div class="text" onclick="showPage('page-p-s-b')">
@@ -520,18 +537,40 @@
 
             <div id="page-p-s-in" class="page page-in">
                 <h1>
-                    Installation
+                    Installation and Upgrading
                 </h1>
 
                 <hr />
 
                 <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;The system can be installed in seven simple steps:
+                    &nbsp;&nbsp;&nbsp;&nbsp;There are several ways to install the SAC system. The
+                    first is to install the latest version. This is the version currently in
+                    active development on GitHub. This version should be stable for the most part
+                    but may have new features which are incomplete. The second way to install is to 
+                    choose and install a specific version from the archive. The third option is to 
+                    upgrade or downgrade to a specific version. This will uninstall the components 
+                    of the latest version and install the necessary new components. The instructions
+                    for these can be found in the menu on the left, on the page of the version to be
+                    installed.
+                </p>
+            </div>
+
+            <div id="page-p-s-in-l" class="page page-in">
+                <h1>
+                    Latest Version Installation
+                </h1>
+
+                <hr />
+
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;The latest version of the system can be installed in 
+                    the steps below:
                 </p>
 
                 <ol>
                     <li>
-                        Download and install Ubuntu 16.04 on either a computer or virtual machine.
+                        Download and install Ubuntu 16.04 (Newer versions comming soon) on either 
+                        a computer or virtual machine.
                     </li>
                         
                     <li>
@@ -617,32 +656,261 @@
                     </li>
                 </ol>
 
-                &nbsp;&nbsp;&nbsp;&nbsp;The setup script may be easily modified to download a 
-                specific version either from the downloads page of this project or from the GitHub 
-                pages of each package.
-            </div>
+                <br />
+                <br />
+                <br />
 
-            <div id="page-p-s-u" class="page page-in">
                 <h1>
-                    SAC Lunar Upgrade
+                    Latest Version Upgrade
                 </h1>
 
                 <hr />
 
                 <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;The upgrade can be run only if SAC Kinetic is already
-                    installed. To upgrade SAC to the next version run
-
-                    <div class="code">
-                        <code>
-                            ./setupPull.sh
-                            ./lunarUpgrade.sh
-                        </code>
-                    </div>
-                    
-                    &nbsp;&nbsp;&nbsp;&nbsp;If you are looking at the source code for this site, note 
-                    that this has not been completely implemented and is not ready for running yet.
+                    To upgrade to the latest version: 
                 </p>
+
+                <ol>
+                    <li>
+                        Clone the setup project onto your system by running
+                        
+                        <div class="code">
+                            <code>
+                                git clone https://github.com/greenpro/sac_setup.git
+                            </code>
+                        </div>
+
+                        If the project is already cloned run
+
+                        <div class="code">
+                            <code>
+                                cd sac_setup 
+                                <br />
+                                ./setupPull.sh
+                            </code>
+                        </div>
+
+                        to get the latest version and skip the next step.
+                    </li>
+                        
+                    <li>
+                        Change the directory to the new project folder
+                        
+                        <div class="code">
+                            <code>
+                                cd sac_setup
+                            </code>
+                        </div>
+                    </li>
+                        
+                    <li>
+                        Run the setup script.
+                        
+                        <div class="code">
+                            <code>
+                                ./latestUpgrade.sh
+                            </code>
+                        </div>
+                    </li>
+                        
+                    <li>
+                        The sac_setup program can now be removed from the system if needed.
+                        
+                        <div class="code">
+                            <code>
+                                cd ..
+                                <br />
+                                rm -rf sac_setup
+                            </code>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <div id="page-p-s-in-lu" class="page page-in">
+                <h1>
+                    Lunar Version Installation
+                </h1>
+
+                <hr />
+
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;For this version follow the latest version instruction
+                    as it is currently in active current use.
+                </p>
+            </div>
+
+            <div id="page-p-s-in-k" class="page page-in">
+                <h1>
+                    Kinetic Version Installation
+                </h1>
+
+                <hr />
+
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;The Kinetic Version of the system can be installed in 
+                    the steps below:
+                </p>
+
+                <ol>
+                    <li>
+                        Download and install Ubuntu 16.04 on either a computer or virtual machine.
+                    </li>
+                        
+                    <li>
+                        Setup Ubuntu, installing any programs you will need.
+                    </li>
+                        
+                    <li>
+                        Install git by running
+                        
+                        <div class="code">
+                            <code>
+                                sudo apt-get install git
+                            </code>
+                        </div>
+                    </li>
+                        
+                    <li>
+                        Clone the setup project onto your system by running
+                        
+                        <div class="code">
+                            <code>
+                                git clone https://github.com/greenpro/sac_setup.git
+                            </code>
+                        </div>
+                    </li>
+                        
+                    <li>
+                        Change the directory to the new project folder
+                        
+                        <div class="code">
+                            <code>
+                                cd sac_setup
+                            </code>
+                        </div>
+                    </li>
+                        
+                    <li>
+                        Run the setup script.
+                        
+                        <div class="code">
+                            <code>
+                                ./kineticSetup.sh
+                            </code>
+                        </div>
+                    </li>
+                        
+                    <li>
+                        The sac_setup program can now be removed from the system if needed.
+                        
+                        <div class="code">
+                            <code>
+                                cd ..
+                                <br />
+                                rm -rf sac_setup
+                            </code>
+                        </div>
+                    </li>
+                        
+                    <li>
+                        To run the project run
+                        
+                        <div class="code">
+                            <code>
+                                cd ~/sac/
+                                <br />
+                                roslaunch sac_launch towers.launch
+                            </code>
+                        </div>
+                        
+                        If this does not work run
+                        
+                        <div class="code">
+                            <code>
+                                cd ~/sac/
+                                <br />
+                                . devel/setup.bash
+                                <br />
+                                ./build.sh
+                                <br />
+                                roslaunch sac_launch towers.launch
+                            </code>
+                        </div>
+                    </li>
+                </ol>
+
+                <br />
+                <br />
+                <br />
+
+                <h1>
+                    Kinetic Version Downgrade
+                </h1>
+
+                <hr />
+
+                <p>
+                    To downgrade to the Kinetic Version: 
+                </p>
+
+                <ol>
+                    <li>
+                        Clone the setup project onto your system by running
+                        
+                        <div class="code">
+                            <code>
+                                git clone https://github.com/greenpro/sac_setup.git
+                            </code>
+                        </div>
+
+                        If the project is already cloned run
+
+                        <div class="code">
+                            <code>
+                                cd sac_setup 
+                                <br />
+                                ./setupPull.sh
+                            </code>
+                        </div>
+
+                        to get the latest version and skip the next step.
+                    </li>
+                        
+                    <li>
+                        Change the directory to the new project folder
+                        
+                        <div class="code">
+                            <code>
+                                cd sac_setup
+                            </code>
+                        </div>
+                    </li>
+                        
+                    <li>
+                        Run the setup script.
+                        
+                        <div class="code">
+                            <code>
+                                ./kineticUpgrade.sh
+                            </code>
+                        </div>
+
+                        and follow the options to downgrade.
+                    </li>
+                        
+                    <li>
+                        The sac_setup program can now be removed from the system if needed.
+                        
+                        <div class="code">
+                            <code>
+                                cd ..
+                                <br />
+                                rm -rf sac_setup
+                            </code>
+                        </div>
+                    </li>
+                </ol>
             </div>
 
             <div id="page-p-s-b" class="page page-in">
@@ -1185,5 +1453,15 @@
         </div>
 
         <script src="craigCode.js"></script>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100448438-1', 'auto');
+    ga('send', 'pageview');
+
+        </script>
     </body>
 </html>
