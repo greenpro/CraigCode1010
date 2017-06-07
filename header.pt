@@ -1,0 +1,6 @@
+        <div class="header">
+            <h1>
+                CraigCode1010
+            </h1>
+            <canvas id="circuit" width="200" height="75"></canvas>
+        </div>
