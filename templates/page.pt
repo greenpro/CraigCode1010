@@ -1,0 +1,9 @@
+<div id="{{id}}" class="page page-in">
+    <h1>
+        {{title}}
+    </h1>
+
+    <hr />
+
+    {{content}}
+</div>

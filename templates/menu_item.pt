@@ -1,0 +1,7 @@
+<div class="topic {{sub_class}}">
+    <div class="text" onclick="showPage({{page_link}}); showMenu({{menu_link}}, {{menu_link_level}})">
+        <h{{h_size}}>
+            {{text}}
+        </h{{h_size}}>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;To run the project run 
+
+    <div class="code">
+        <code>
+            roslaunch sac_launch [controller].launch
+        </code>
+    </div>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;Where <code>[controller]</code> is the first word of the 
+    controller to be run. The current launch files are:
+
+    <ol>
+        <li>
+            <div class="code">
+                <code>
+                    api.launch
+                </code>
+            </div>
+        </li>
+        <li>
+            <div class="code">
+                <code>
+                    custom.launch
+                </code>
+            </div>
+        </li>
+        <li>
+            <div class="code">
+                <code>
+                    towers.launch
+                </code>
+            </div>
+        </li>
+    </ol>
+</p>

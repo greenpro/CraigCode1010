@@ -1,0 +1,10 @@
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;This platform is intended to be used in education. The 
+    project currently controls a simulation of the SCORBOT-ER III robot. The system 
+    is built on the Robot Operating System (ROS) platform. Information on ROS can be 
+    found <a href="http://www.ros.org">here</a>. The system can be found on GitHub 
+    with the root found <a href="https://github.com/greenpro/sac_setup">here</a>. 
+    The system runs on Ubuntu 16.04. The system will run on a VM, but it is not 
+    ideal for the simulation of the robot. All citations and references for this 
+    section can be found on the paper in the downloads page.
+</p>

@@ -1,0 +1,163 @@
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;The latest version of the system can be installed in 
+    the steps below:
+</p>
+
+<ol>
+    <li>
+        Download and install Ubuntu 16.04 (Newer versions comming soon) on either 
+        a computer or virtual machine.
+    </li>
+        
+    <li>
+        Setup Ubuntu, installing any programs you will need.
+    </li>
+        
+    <li>
+        Install git by running
+        
+        <div class="code">
+            <code>
+                sudo apt-get install git
+            </code>
+        </div>
+    </li>
+        
+    <li>
+        Clone the setup project onto your system by running
+        
+        <div class="code">
+            <code>
+                git clone https://github.com/greenpro/sac_setup.git
+            </code>
+        </div>
+    </li>
+        
+    <li>
+        Change the directory to the new project folder
+        
+        <div class="code">
+            <code>
+                cd sac_setup
+            </code>
+        </div>
+    </li>
+        
+    <li>
+        Run the setup script.
+        
+        <div class="code">
+            <code>
+                ./setup.sh
+            </code>
+        </div>
+    </li>
+        
+    <li>
+        The sac_setup program can now be removed from the system if needed.
+        
+        <div class="code">
+            <code>
+                cd ..
+                <br />
+                rm -rf sac_setup
+            </code>
+        </div>
+    </li>
+        
+    <li>
+        To run the project run
+        
+        <div class="code">
+            <code>
+                cd ~/sac/
+                <br />
+                roslaunch sac_launch towers.launch
+            </code>
+        </div>
+        
+        If this does not work run
+        
+        <div class="code">
+            <code>
+                cd ~/sac/
+                <br />
+                . devel/setup.bash
+                <br />
+                ./build.sh
+                <br />
+                roslaunch sac_launch towers.launch
+            </code>
+        </div>
+    </li>
+</ol>
+
+<br />
+<br />
+<br />
+
+<h1>
+    Latest Version Upgrade
+</h1>
+
+<hr />
+
+<p>
+    To upgrade to the latest version: 
+</p>
+
+<ol>
+    <li>
+        Clone the setup project onto your system by running
+        
+        <div class="code">
+            <code>
+                git clone https://github.com/greenpro/sac_setup.git
+            </code>
+        </div>
+
+        If the project is already cloned run
+
+        <div class="code">
+            <code>
+                cd sac_setup 
+                <br />
+                ./setupPull.sh
+            </code>
+        </div>
+
+        to get the latest version and skip the next step.
+    </li>
+        
+    <li>
+        Change the directory to the new project folder
+        
+        <div class="code">
+            <code>
+                cd sac_setup
+            </code>
+        </div>
+    </li>
+        
+    <li>
+        Run the setup script.
+        
+        <div class="code">
+            <code>
+                ./latestUpgrade.sh
+            </code>
+        </div>
+    </li>
+        
+    <li>
+        The sac_setup program can now be removed from the system if needed.
+        
+        <div class="code">
+            <code>
+                cd ..
+                <br />
+                rm -rf sac_setup
+            </code>
+        </div>
+    </li>
+</ol>

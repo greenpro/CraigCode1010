@@ -1,0 +1,12 @@
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;To build the project a script has been made, this can be
+    called by running:
+
+    <div class="code">
+        <code>
+            cd ~/sac/
+            <br />
+            ./build.sh
+        </code>
+    </div>
+</p>

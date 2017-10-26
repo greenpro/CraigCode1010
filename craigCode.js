@@ -594,7 +594,7 @@ function circuitDraw()
     ctx.fillRect(938, 20, 5, 5);
 }
 
-var curPage = "page-h";
+var curPage = "pages_home";
 function showPage(page)
 {
     var oldpage = document.getElementById(curPage);

@@ -1,0 +1,11 @@
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;There are several ways to install the SAC system. The
+    first is to install the latest version. This is the version currently in
+    active development on GitHub. This version should be stable for the most part
+    but may have new features which are incomplete. The second way to install is to 
+    choose and install a specific version from the archive. The third option is to 
+    upgrade or downgrade to a specific version. This will uninstall the components 
+    of the latest version and install the necessary new components. The instructions
+    for these can be found in the menu on the left, on the page of the version to be
+    installed.
+</p>

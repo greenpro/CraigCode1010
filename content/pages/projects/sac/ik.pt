@@ -1,0 +1,171 @@
+<p>
+    <div class="image">
+        <div class="title">
+            <h3>
+                Scorbot-ER III Side View
+            </h3>
+        </div>
+
+        <hr />
+
+        <img src="sac/imgs/ikSide.png" />
+
+        <hr />
+        
+        <div class="caption">
+            &nbsp;&nbsp;&nbsp;&nbsp; A side view of the arm with the inverse 
+            kinematics variables. Black solid lines indicate the links of the robot 
+            in the primary position. Black dashed lines indicate the alternate 
+            positions of the robot links. Large black dots indicate the joints of 
+            the robot. Blue angles, dashed lines, and labels indicate the joint 
+            angles of the robot. Green dashed lines, angles and labels indicate the 
+            intermediate variables used in the calculation of the joint angles. Gray 
+            labels indicate the known values of the end-effector that are passed in 
+            and for the lengths of the arm links.
+        </div>
+    </div>
+
+    <div class="image">
+        <div class="title">
+            <h3>
+                Scorbot-ER III Top View
+            </h3>
+        </div>
+
+        <hr />
+
+        <img src="sac/imgs/ikTop.png" />
+
+        <hr />
+
+        <div class="caption">
+            &nbsp;&nbsp;&nbsp;&nbsp;A top view of the arm with the inverse 
+            kinematics variables. Black solid lines indicate the links of the robot 
+            in the primary position. Black dashed lines indicate the alternate 
+            positions of the robot links. Large black dots indicate the joints of 
+            the robot. Blue angles, dashed lines, and labels indicate the joint 
+            angles of the robot. Green dashed lines, angles and labels indicate the 
+            intermediate variables used in the calculation of the joint angles. 
+            Gray labels indicate the known values of the end-effector that are 
+            passed in and for the lengths of the arm links.
+        </div>
+    </div>
+
+    The equations for the Inverse Kinematics is as follows:
+
+    <br />
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;First we need to find the base angle 
+    (<img class="variable" src="sac/imgs/eqn-var-theta_b.png" />). This can be done 
+    using the inverse tangent as
+
+    <div class="equation">
+        <img class="img" src="sac/imgs/eqn-00.png" />
+    </div>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;Where 
+    <img class="variable" src="sac/imgs/eqn-var-x.png" /> and 
+    <img class="variable" src="sac/imgs/eqn-var-y.png" /> are the given end-
+    effector goals for their respective axis.
+
+    <br />
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;The projected height 
+    (<img class="variable" src="sac/imgs/eqn-var-d_4z.png" />) and radius 
+    (<img class="variable" src="sac/imgs/eqn-var-d_4r.png" />) of the
+    <img class="variable" src="sac/imgs/eqn-var-d_4.png" /> link can be found using 
+    the input angle <img class="variable" src="sac/imgs/eqn-var-theta_pitch.png" /> 
+    by the equations
+
+    <div class="equation">
+        <img class="img" src="sac/imgs/eqn-01.png" />
+    </div>
+
+    and
+
+    <div class="equation">
+        <img class="img" src="sac/imgs/eqn-02.png" />
+    </div>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;The total radius 
+    (<img class="variable" src="sac/imgs/eqn-var-r.png" />) from the center of the 
+    robot to the end-effector can be found by using the Pythagorean Theorem as
+
+    <div class="equation">
+        <img class="imgDouble" src="sac/imgs/eqn-03.png" />
+    </div>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;The next variable which needs to be found is the 
+    difference in height from the shoulder joint 
+    (<img class="variable" src="sac/imgs/eqn-var-theta_s.png" />) to the wrist 
+    pitch joint (<img class="variable" src="sac/imgs/eqn-var-theta_p.png" />) can 
+    be found by
+
+    <div class="equation">
+        <img class="img" src="sac/imgs/eqn-04.png" />
+    </div>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;The radius between these points can also be found using
+
+    <div class="equation">
+        <img class="img" src="sac/imgs/eqn-05.png" />
+    </div>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;Again using Pythagorean Theorem the total distance
+    (<img class="variable" src="sac/imgs/eqn-var-e.png">) between these joints can 
+    be found, written as
+
+    <div class="equation">
+        <img class="imgDouble" src="sac/imgs/eqn-06.png" />
+    </div>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;The elbow joint 
+    (<img class="variable" src="sac/imgs/eqn-var-theta_e.png" />) can be found 
+    using the equation
+
+    <div class="equation">
+        <img class="imgTripple" src="sac/imgs/eqn-07.png" />
+    </div>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;Since all the distances are known for the elbow triangle
+    and the wrist pitch elevation triangle, The 
+    <img class="variable" src="sac/imgs/eqn-var-theta_e_z.png" /> and the 
+    <img class="variable" src="sac/imgs/eqn-var-theta_a.png" /> angles can be found 
+    using the Law of Cosines as
+
+    <div class="equation">
+        <img class="imgDoubleHalf" src="sac/imgs/eqn-08.png" />
+    </div>
+
+    and
+
+    <div class="equation">
+        <img class="imgDoubleHalf" src="sac/imgs/eqn-09.png" />
+    </div>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;The shoulder joint 
+    (<img class="variable" src="sac/imgs/eqn-var-theta_s.png" />) can be found by 
+    using the angles found in the previous two equations with
+
+    <div class="equation">
+        <img class="img" src="sac/imgs/eqn-10.png" />
+    </div>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;The wrist pitch joint 
+    (<img class="variable" src="sac/imgs/eqn-var-theta_p.png" />) can be found 
+    using the surrounding known joints. This equation can be written as
+
+    <div class="equation">
+        <img class="img" src="sac/imgs/eqn-11.png" />
+    </div>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;The wrist roll joint
+    (<img class="variable" src="sac/imgs/eqn-var-theta_r.png" />) joint is given by 
+    the input as
+
+    <div class="equation">
+        <img class="img" src="sac/imgs/eqn-12.png" />
+    </div>
+</p>

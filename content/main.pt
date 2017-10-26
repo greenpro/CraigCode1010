@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' />
+        <link href="craigCode.css" rel="stylesheet" />
+        <link rel="icon" type="image/png" href="icon.png" size="16x16" />
+        <meta charset="utf-8" />
+        <title>
+            CraigCode1010
+        </title>
+    </head>
+
+    <body class="craig-code">
+        <div class="header">
+            <h1>
+                CraigCode1010
+            </h1>
+            <canvas id="circuit" width="200" height="75"></canvas>
+        </div>
+
+        <div class="navigation">
+            <div class="pages">
+                {{menus/home}}
+                {{menus/projects}}
+
+                <div id="menus_projects" class="menu-group page-in">
+                    {{menus/projects/sac}}
+
+                    <div id="menus_projects_sac" class="menu-group page-in">
+                        {{menus/projects/sac/structure}}
+                        {{menus/projects/sac/ik}}
+                        {{menus/projects/sac/install}}
+
+                        <div id="menu-p-s-in" class="menu-group page-in">
+                            {{menus/projects/sac/install/latest}}
+                            {{menus/projects/sac/install/lunar}}
+                            {{menus/projects/sac/install/kinetic}}
+                        </div>
+
+                        {{menus/projects/sac/building}}
+                        {{menus/projects/sac/running}}
+                        {{menus/projects/sac/design}}
+                        {{menus/projects/sac/contributing}}
+                        {{menus/projects/sac/issues}}
+                        {{menus/projects/sac/downloads}}
+                    </div>
+
+                    {{menus/projects/cc}}
+                </div>
+
+                {{menus/about}}
+            </div>
+        </div>
+
+        <div class="content">
+            {{pages/home}}
+            {{pages/projects}}
+            {{pages/projects/sac}}
+            {{pages/projects/sac/structure}}
+            {{pages/projects/sac/ik}}
+            {{pages/projects/sac/install}}
+            {{pages/projects/sac/install/latest}}
+            {{pages/projects/sac/install/lunar}}
+            {{pages/projects/sac/install/kinetic}}
+            {{pages/projects/sac/building}}
+            {{pages/projects/sac/running}}
+            {{pages/projects/sac/design}}
+            {{pages/projects/sac/contributing}}
+            {{pages/projects/sac/issues}}
+            {{pages/projects/sac/downloads}}
+            {{pages/projects/cc}}
+            {{pages/about}}
+        </div>
+
+        <div class="footer">
+            <h4>&copy; Craig Christensen 2017</h4>
+        </div>
+
+        <script src="craigCode.js"></script>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100448438-1', 'auto');
+    ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

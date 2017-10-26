@@ -21,7 +21,7 @@
 
         <div class="navigation">
             <div class="pages">
-                <div class="topic">
+                <div class="topic ">
                     <div class="text" onclick="showPage('page-h'); showMenu(null, 0)">
                         <h2>
                             Home
@@ -29,7 +29,7 @@
                     </div>
                 </div>
 
-                <div class="topic">
+                <div class="topic ">
                     <div class="text" onclick="showPage('page-p'); showMenu('menu-p', 0)">
                         <h2>
                             Projects
@@ -56,8 +56,7 @@
                         </div>
 
                         <div class="topic sub-sub-topic">
-                            <div class="text" 
-                                onclick="showPage('page-p-s-i'); showMenu(null, 2)">
+                            <div class="text" onclick="showPage('page-p-s-i'); showMenu(null, 2)">
                                 <h4>
                                     Inverse Kinematics
                                 </h4>
@@ -65,8 +64,7 @@
                         </div>
 
                         <div class="topic sub-sub-topic">
-                            <div class="text" 
-                                onclick="showPage('page-p-s-in'); showMenu('menu-p-s-in', 2)">
+                            <div class="text" onclick="showPage('page-p-s-in'); showMenu('menu-p-s-in', 2)">
                                 <h4>
                                     Installation and Upgrading
                                 </h4>
@@ -75,8 +73,7 @@
 
                         <div id="menu-p-s-in" class="menu-group page-in">
                             <div class="topic sub-sub-sub-topic">
-                                <div class="text" 
-                                    onclick="showPage('page-p-s-in-l'); showMenu(null, 2)">
+                                <div class="text" onclick="showPage('page-p-s-in-l'); showMenu(null, 2)">
                                     <h5>
                                         Latest
                                     </h5>
@@ -84,8 +81,7 @@
                             </div>
 
                             <div class="topic sub-sub-sub-topic">
-                                <div class="text" 
-                                    onclick="showPage('page-p-s-in-lu'); showMenu(null, 2)">
+                                <div class="text" onclick="showPage('page-p-s-in-lu'); showMenu(null, 2)">
                                     <h5>
                                         Lunar
                                     </h5>
@@ -93,8 +89,7 @@
                             </div>
 
                             <div class="topic sub-sub-sub-topic">
-                                <div class="text" 
-                                    onclick="showPage('page-p-s-in-k'); showMenu(null, 2)">
+                                <div class="text" onclick="showPage('page-p-s-in-k'); showMenu(null, 2)">
                                     <h5>
                                         Kinetic
                                     </h5>

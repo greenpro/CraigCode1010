@@ -1135,14 +1135,17 @@
 
                 <hr />
 
-                <a href="sac/sac.pdf">
+                <a href="http://knowledge.e.southern.edu/cgi/viewcontent.cgi?article=1002&context=mscs_reports">
                     A Robotics Framework for Simulation and Control of a Robotic Arm for Use in 
                     Higher Education
                 </a>
 
                 <br />
-                Note: This paper has had minor modification to correct some errors since the approval 
-                by the defence committee listed in the paper.
+
+                Note: I will be posting a new version of this paper on this site once SAC Lunar is 
+                fully complete. Untill then the documentation will be on this site and on the 
+                project GitHubs. (yes, I know there are a few minor errors in the paper they will 
+                be fixed in the next version).
 
                 <br />
                 <br />
@@ -1434,7 +1437,7 @@
                 <hr />
 
                 <p>
-                    Hi, I am a software and hardware developer in the Embedded Systems arena. I try 
+                    Hi, I am a software and hardware developer in the Embedded Systems sphere. I try 
                     to make projects which interrest me, and that are hopefully useful for others.
                     All of my projects are intended to be open-source and freely available to 
                     anyone. The only parts of my projects I do not post are pieces which are used 
@@ -1448,6 +1451,38 @@
                     <br />
 
                     Email: <a href="craigcode1010@gmail.com">craigcode1010@gmail.com</a>
+                </p>
+            </div>
+
+            <div id="page-r" class="page page-in">
+                <h1>
+                    Random()
+                </h1>
+
+                <hr />
+
+                <p>
+                    This is the page where I will be posting all sorts of random items. Not all of
+                    them are computer related, some are things I find interesting, some are items for
+                    future projects, some will be items I have found useful. Enjoy!
+
+                    <hr />
+                    <br />
+                    <br />
+
+                    <h3>
+                        Hexapod Walker
+                    </h3>
+
+                    <a href="http://www.trossenrobotics.com/phantomx-ax-hexapod.aspx">
+                        PhantomX AX Mark III
+                    </a>
+
+                    This is a 
+
+                    <hr />
+                    <br />
+                    <br />
                 </p>
             </div>
         </div>

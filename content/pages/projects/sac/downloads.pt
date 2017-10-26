@@ -1,0 +1,274 @@
+<h3>
+    Paper
+</h3>
+
+<hr />
+
+<a href="http://knowledge.e.southern.edu/cgi/viewcontent.cgi?article=1002&context=mscs_reports">
+    A Robotics Framework for Simulation and Control of a Robotic Arm for Use in 
+    Higher Education
+</a>
+
+<br />
+
+Note: I will be posting a new version of this paper on this site once SAC Lunar is 
+fully complete. Untill then the documentation will be on this site and on the 
+project GitHubs. (yes, I know there are a few minor errors in the paper they will 
+be fixed in the next version).
+
+<br />
+<br />
+
+<h3>
+    Setup
+</h3>
+
+<table>
+    <tr>
+        <th>
+            Package
+        </th>
+        <th>
+            Version
+        </th>
+        <th>
+            zip
+        </th>
+        <th>
+            tar.gz
+        </th>
+    </tr>
+
+
+    <tr>
+        <td>
+            sac_setup
+        </td>
+        <td>
+            Kinetic
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_setup-Kinetic.zip">
+                Download
+            </a>
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_setup-Kinetic.tar.gz">
+                Download
+            </a>
+        </td>
+    </tr>
+</table>
+
+<br />
+<br />
+
+<h3>
+    Packages
+</h3>
+
+<table>
+    <tr>
+        <th>
+            Package
+        </th>
+        <th>
+            Version
+        <th>
+            zip
+        </th>
+        <th>
+            tar.gz
+        </th>
+    </tr>
+
+    <tr>
+        <td>
+            andreas_arm_config 
+        </td>
+        <td>
+            Kinetic
+        </td>
+        <td>
+            <a href="sac/kinetic/andreas_arm_config-Kinetic.zip">
+                Download
+            </a>
+        </td>
+        <td>
+            <a href="sac/kinetic/andreas_arm_config-Kinetic.tar.gz">
+                Download
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            sac_config
+        </td>
+        <td>
+            Kinetic
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_config-Kinetic.zip">
+                Download
+            </a>
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_config-Kinetic.tar.gz">
+                Download
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            sac_controllers
+        </td>
+        <td>
+            Kinetic
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_controllers-Kinetic.zip">
+                Download
+            </a>
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_controllers-Kinetic.tar.gz">
+                Download
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            sac_description
+        </td>
+        <td>
+            Kinetic
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_description-Kinetic.zip">
+                Download
+            </a>
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_description-Kinetic.tar.gz">
+                Download
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            sac_drivers
+        </td>
+        <td>
+            Kinetic
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_drivers-Kinetic.zip">
+                Download
+            </a>
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_drivers-Kinetic.tar.gz">
+                Download
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            sac_gazebo
+        </td>
+        <td>
+            Kinetic
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_gazebo-Kinetic.zip">
+                Download
+            </a>
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_gazebo-Kinetic.tar.gz">
+                Download
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            sac_launch
+        </td>
+        <td>
+            Kinetic
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_launch-Kinetic.zip">
+                Download
+            </a>
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_launch-Kinetic.tar.gz">
+                Download
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            sac_msgs
+        </td>
+        <td>
+            Kinetic
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_msgs-Kinetic.zip">
+                Download
+            </a>
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_msgs-Kinetic.tar.gz">
+                Download
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            sac_translators
+        </td>
+        <td>
+            Kinetic
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_translators-Kinetic.zip">
+                Download
+            </a>
+        </td>
+        <td>
+            <a href="sac/kinetic/sac_translators-Kinetic.tar.gz">
+                Download
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            scorbot_config
+        </td>
+        <td>
+            Kinetic
+        </td>
+        <td>
+            <a href="sac/kinetic/scorbot_config-Kinetic.zip">
+                Download
+            </a>
+        </td>
+        <td>
+            <a href="sac/kinetic/scorbot_config-Kinetic.tar.gz">
+                Download
+            </a>
+        </td>
+    </tr>
+</table>
