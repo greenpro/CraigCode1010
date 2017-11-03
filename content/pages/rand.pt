@@ -1,0 +1,10 @@
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;Welcome, you've made it to the first easter egg. This is where I will 
+    post all of the random interesting things I've found, made, seen, or read. Feel free to browse 
+    around, and again, welcome to the random corners of my mind.
+
+    <br />
+    <br />
+
+    <canvas id="mind" class="center" width="500px" height="400px"></canvas>
+</p>

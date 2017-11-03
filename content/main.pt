@@ -32,7 +32,7 @@
                         {{menus/projects/sac/ik}}
                         {{menus/projects/sac/install}}
 
-                        <div id="menu-p-s-in" class="menu-group page-in">
+                        <div id="menus_projects_sac_install" class="menu-group page-in">
                             {{menus/projects/sac/install/latest}}
                             {{menus/projects/sac/install/lunar}}
                             {{menus/projects/sac/install/kinetic}}
@@ -50,6 +50,14 @@
                 </div>
 
                 {{menus/about}}
+
+                <div id="menus_rand" class="menu-group page-in">
+                    {{menus/rand}}
+
+                    <div id="menus_rand_salsa" class="menu-group page-in">
+                        {{menus/rand/salsa}}
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -71,6 +79,8 @@
             {{pages/projects/sac/downloads}}
             {{pages/projects/cc}}
             {{pages/about}}
+            {{pages/rand}}
+            {{pages/rand/salsa}}
         </div>
 
         <div class="footer">

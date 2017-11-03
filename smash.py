@@ -157,6 +157,24 @@ parts = [
         ]
     ],
     [
+        "pages/rand",
+        "templates/page.pt",
+        "content/pages/rand.pt",
+        [
+            ["id",    "pages_rand"],
+            ["title", "Rand()"]
+        ]
+    ],
+    [
+        "pages/rand/salsa",
+        "templates/page.pt",
+        "content/pages/rand/salsa.pt",
+        [
+            ["id",    "pages_rand_salsa"],
+            ["title", "Habanero Serrano Salsa"]
+        ]
+    ],
+    [
         "menus/home",
         "templates/menu_item.pt",
         None,
@@ -375,6 +393,32 @@ parts = [
             ["menu_link_level", "0"],
             ["h_size",          "2"],
             ["text",            "About"]
+        ]
+    ],
+    [
+        "menus/rand",
+        "templates/menu_item.pt",
+        None,
+        [
+            ["sub_class",       ""],
+            ["page_link",       "'pages_rand'"],
+            ["menu_link",       "'menus_rand_salsa'"],
+            ["menu_link_level", "0"],
+            ["h_size",          "2"],
+            ["text",            "Rand()"]
+        ]
+    ],
+    [
+        "menus/rand/salsa",
+        "templates/menu_item.pt",
+        None,
+        [
+            ["sub_class",       "sub-topic"],
+            ["page_link",       "'pages_rand_salsa'"],
+            ["menu_link",       "null"],
+            ["menu_link_level", "1"],
+            ["h_size",          "3"],
+            ["text",            "Habanero-Serrano Salsa"]
         ]
     ]]
 

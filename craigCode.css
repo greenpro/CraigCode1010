@@ -174,6 +174,12 @@
     margin: 10px;
 }
 
+.craig-code .content .page .center
+{
+    display: block;
+    margin: auto;
+}
+
 .craig-code .content .page table
 {
     border-collapse: collapse;
@@ -208,8 +214,9 @@
     border-radius: 5px;
 
     width: 100%;
-    max-width: 800px;
+    max-width: 1500px;
     margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .craig-code .content .image hr
@@ -233,6 +240,18 @@
 {
     width: 90%;
     margin: 5px 5% 5px 5%;
+}
+
+.craig-code .content .page .image .group
+{
+    width: 90%;
+    margin: 5px 5% 20px 5%;
+}
+
+.craig-code .content .page .image .group img
+{
+    width: 49.6%;
+    margin: 0;
 }
 
 .craig-code .content .page .image .caption
