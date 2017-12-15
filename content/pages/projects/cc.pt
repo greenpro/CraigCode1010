@@ -3,13 +3,10 @@
     now. This site has been created completely from scratch using simple 
     javascript, css3, HTML5, and some fonts from Google. This allows the site to be 
     developed using any editor (I am using vim), and The site can be served from 
-    any type of server, including a Python server.  
+    any type of server, including a Python server. Though this project is claimed 
+    under a GNU v3.0 Licence, I do ask that anyone who makes a copy of it changes 
+    the banners, content, and name on the site.
 
     <br />
     <br />
-
-    <!--&nbsp;&nbsp;&nbsp;&nbsp;Though this site should be awsome enough to amaze. It 
-    is not the end. This site is also a facade for a Raspberry Pi cluster which 
-    uses ROS for communication in the cluster. When this is completed to a 
-    reasonable state the packages for will be posted to my GitHub page.-->
 </p>

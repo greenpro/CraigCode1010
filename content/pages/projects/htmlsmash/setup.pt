@@ -1,0 +1,42 @@
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;The target project can be setup in any layout required by the 
+    user. For an example of a possible layout see the content folder of the CraigCode1010 
+    project found here. The tag file may is more layout specific, and should be setup as:
+
+    <div class="code">
+        <code>
+            {<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;tag:      [ID0]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;template: [TEMPLATE_PATH_AND_FILE0]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;part:     [PART_PATH_AND_FILE0]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;tag1: [VALUE_10]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;tag2: [VALUE_20]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;tag3: [VALUE_30]<br/>
+            }<br/>
+            {<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;tag:      [ID1]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;template: [TEMPLATE_PATH_AND_FILE1]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;part:     [PART_PATH_AND_FILE1]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;tag1: [VALUE_11]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;tag2: [VALUE_21]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;tag3: [VALUE_31]<br/>
+            }
+        </code>
+    </div>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;The parts in brackets (including the brackets) should be 
+    replaced with the values for each. The system will ignore spaces, tabs, and extra new 
+    lines. The ID is the ID to look for in the compiling smash (without the '{{}}'). The 
+    template is the path and file for the template relative to the content path provided 
+    during configuration. The part is the path and file to use in the given template. This 
+    will fill the {{content}} tag in the template. If no part is needed 'None' (without 
+    quotes) must be used. Tag# are any other tags which must be replaced in the template and 
+    content (These tags are local to the template and content pair). Tags are intended to 
+    replace smaller parts of the pair like titles, ID tags, or classes. for a full example 
+    of this see tagFile.tg in the CraigCode1010 project.
+
+    <br/>
+    <br/>
+</p>

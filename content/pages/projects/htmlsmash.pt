@@ -1,0 +1,62 @@
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;This project is an offshoot of my CraigCode1010.com project, 
+    which can be found at project site. This project is used to compile the site to a 
+    static HTML site. The project allows for multiple teplates and HTML parts to be 
+    compiled into a single static HTML page which can be easily served up from a small 
+    embedded server or quickly from a larger server with minimal load on the system. 
+    This project has been designed and tested on linux through Bash on Ubuntu on Windows, 
+    though it should work on any OS as it is written in python. The project currently 
+    uses python 3.5 which comes pre-installed on most linux distros.
+
+
+    <h3>Terms</h3>
+    
+    These terms will apply to this and all files in the project including documentation 
+    and code.
+
+    <ul>
+        <li>
+            HTML Part (part/snippet)
+            <ul>
+                <li>
+                    Individual HTML snippets to be compiled to final main
+                </li>
+                <li>
+                    Files end in a .pt file extension (this may be changed, though using 
+                    it provides syntax highlighting)
+                </li>
+            </ul>
+        </li>
+        <li>
+            Tag
+            <ul>
+                <li>
+                    A searchable identifier within the main.pt or another *.pt file to be
+                    replaced by HTML smash
+                </li>
+                <li>
+                    formatted as {{ID}} (in the AngularJS syntax) where ID is the tag
+                </li>
+            </ul>
+        </li>
+        <li>
+            HTML Template (template)
+            <ul>
+                <li>
+                    used to create repeated pieces of HTML like buttons, text boxes and headings
+                </li>
+            </ul>
+        </li>
+        <li>
+            Target Project (smash)
+            <ul>
+                <li>
+                    The HTML project to be compiled and the final output file
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <br/>
+    <br/>
+</p>

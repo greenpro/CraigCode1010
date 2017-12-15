@@ -127,6 +127,38 @@
     title: CraigCode1010
 }
 {
+    tag:      pages/projects/htmlsmash
+    template: templates/page.pt
+    part:     content/pages/projects/htmlsmash.pt
+
+    id:    pages_projects_htmlsmash
+    title: HTMLsmash
+}
+{
+    tag:      pages/projects/htmlsmash/installandrun
+    template: templates/page.pt
+    part:     content/pages/projects/htmlsmash/installandrun.pt
+
+    id:    pages_projects_htmlsmash_installandrun
+    title: Install&nbsp;&amp;&nbsp;Run
+}
+{
+    tag:      pages/projects/htmlsmash/setup
+    template: templates/page.pt
+    part:     content/pages/projects/htmlsmash/setup.pt
+
+    id:    pages_projects_htmlsmash_setup
+    title: Smash Setup
+}
+{
+    tag:      pages/projects/htmlsmash/contributing
+    template: templates/page.pt
+    part:     content/pages/projects/htmlsmash/contributing.pt
+
+    id:    pages_projects_htmlsmash_contributing
+    title: Contributing
+}
+{
     tag:      pages/about
     template: templates/page.pt
     part:     content/pages/about.pt
@@ -341,6 +373,54 @@
     menu_link_level: 1
     h_size:          3
     text:            CraigCode1010
+}
+{
+    tag:      menus/projects/htmlsmash
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-topic
+    page_link:       'pages_projects_htmlsmash'
+    menu_link:       'menus_projects_htmlsmash'
+    menu_link_level: 1
+    h_size:          3
+    text:            htmlSmash
+}
+{
+    tag:      menus/projects/htmlsmash/installandrun
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-sub-topic
+    page_link:       'pages_projects_htmlsmash_installandrun'
+    menu_link:       None
+    menu_link_level: 2
+    h_size:          4
+    text:            Install&nbsp;&amp;&nbsp;Run
+}
+{
+    tag:      menus/projects/htmlsmash/setup
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-sub-topic
+    page_link:       'pages_projects_htmlsmash_setup'
+    menu_link:       None
+    menu_link_level: 2
+    h_size:          4
+    text:            Smash Setup
+}
+{
+    tag:      menus/projects/htmlsmash/contributing
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-sub-topic
+    page_link:       'pages_projects_htmlsmash_contributing'
+    menu_link:       None
+    menu_link_level: 2
+    h_size:          4
+    text:            Contributing
 }
 {
     tag:      menus/about

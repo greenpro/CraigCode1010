@@ -47,6 +47,13 @@
                     </div>
 
                     {{menus/projects/cc}}
+                    {{menus/projects/htmlsmash}}
+
+                    <div id="menus_projects_htmlsmash" class="menu-group page-in">
+                        {{menus/projects/htmlsmash/installandrun}}
+                        {{menus/projects/htmlsmash/setup}}
+                        {{menus/projects/htmlsmash/contributing}}
+                    </div>
                 </div>
 
                 {{menus/about}}
@@ -78,6 +85,10 @@
             {{pages/projects/sac/issues}}
             {{pages/projects/sac/downloads}}
             {{pages/projects/cc}}
+            {{pages/projects/htmlsmash}}
+            {{pages/projects/htmlsmash/installandrun}}
+            {{pages/projects/htmlsmash/setup}}
+            {{pages/projects/htmlsmash/contributing}}
             {{pages/about}}
             {{pages/rand}}
             {{pages/rand/salsa}}

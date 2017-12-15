@@ -159,6 +159,41 @@
     </div>
 </div>
 
+                    <div class="topic sub-topic">
+    <div class="text" onclick="showPage('pages_projects_htmlsmash'); showMenu('menus_projects_htmlsmash', 1)">
+        <h3>
+            htmlSmash
+        </h3>
+    </div>
+</div>
+
+
+                    <div id="menus_projects_htmlsmash" class="menu-group page-in">
+                        <div class="topic sub-sub-topic">
+    <div class="text" onclick="showPage('pages_projects_htmlsmash_installandrun'); showMenu(None, 2)">
+        <h4>
+            Install&nbsp;&amp;&nbsp;Run
+        </h4>
+    </div>
+</div>
+
+                        <div class="topic sub-sub-topic">
+    <div class="text" onclick="showPage('pages_projects_htmlsmash_setup'); showMenu(None, 2)">
+        <h4>
+            SmashSetup
+        </h4>
+    </div>
+</div>
+
+                        <div class="topic sub-sub-topic">
+    <div class="text" onclick="showPage('pages_projects_htmlsmash_contributing'); showMenu(None, 2)">
+        <h4>
+            Contributing
+        </h4>
+    </div>
+</div>
+
+                    </div>
                 </div>
 
                 <div class="topic ">
@@ -1452,15 +1487,193 @@ be fixed in the next version).
     now. This site has been created completely from scratch using simple 
     javascript, css3, HTML5, and some fonts from Google. This allows the site to be 
     developed using any editor (I am using vim), and The site can be served from 
-    any type of server, including a Python server.  
+    any type of server, including a Python server. Though this project is claimed 
+    under a GNU v3.0 Licence, I do ask that anyone who makes a copy of it changes 
+    the banners, content, and name on the site.
 
     <br />
     <br />
+</p>
 
-    <!--&nbsp;&nbsp;&nbsp;&nbsp;Though this site should be awsome enough to amaze. It 
-    is not the end. This site is also a facade for a Raspberry Pi cluster which 
-    uses ROS for communication in the cluster. When this is completed to a 
-    reasonable state the packages for will be posted to my GitHub page.-->
+</div>
+
+            <div id="pages_projects_htmlsmash" class="page page-in">
+    <h1>
+        HTMLsmash
+    </h1>
+
+    <hr />
+
+    <p>
+    &nbsp;&nbsp;&nbsp;&nbsp;This project is an offshoot of my CraigCode1010.com project, 
+    which can be found at project site. This project is used to compile the site to a 
+    static HTML site. The project allows for multiple teplates and HTML parts to be 
+    compiled into a single static HTML page which can be easily served up from a small 
+    embedded server or quickly from a larger server with minimal load on the system. 
+    This project has been designed and tested on linux through Bash on Ubuntu on Windows, 
+    though it should work on any OS as it is written in python. The project currently 
+    uses python 3.5 which comes pre-installed on most linux distros.
+
+
+    <h3>Terms</h3>
+    
+    These terms will apply to this and all files in the project including documentation 
+    and code.
+
+    <ul>
+        <li>
+            HTML Part (part/snippet)
+            <ul>
+                <li>
+                    Individual HTML snippets to be compiled to final main
+                </li>
+                <li>
+                    Files end in a .pt file extension (this may be changed, though using 
+                    it provides syntax highlighting)
+                </li>
+            </ul>
+        </li>
+        <li>
+            Tag
+            <ul>
+                <li>
+                    A searchable identifier within the main.pt or another *.pt file to be
+                    replaced by HTML smash
+                </li>
+                <li>
+                    formatted as {{ID}} (in the AngularJS syntax) where ID is the tag
+                </li>
+            </ul>
+        </li>
+        <li>
+            HTML Template (template)
+            <ul>
+                <li>
+                    used to create repeated pieces of HTML like buttons, text boxes and headings
+                </li>
+            </ul>
+        </li>
+        <li>
+            Target Project (smash)
+            <ul>
+                <li>
+                    The HTML project to be compiled and the final output file
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <br/>
+    <br/>
+</p>
+
+</div>
+
+            <div id="pages_projects_htmlsmash_installandrun" class="page page-in">
+    <h1>
+        Install&nbsp;&amp;&nbsp;Run
+    </h1>
+
+    <hr />
+
+    <p>
+    <h3>Install</h3>
+
+    <ol>
+        <li>Install Git</li>
+        <li>Clone/Fork/Download the project from 
+            <a href="https://github.com/greenpro/HTMLsmash">The GitHub Project</a>.</li>
+        <li>Done.</li>
+    </ol>
+
+    <h3>Run</h3>
+
+    To run the project, go the into the folder downloaded. If you are running the project 
+    for the first time run 
+    <div class="code">
+        <code>./config.py</code> 
+    </div>
+    and fill out the questions, else skip this step.  Next run 
+    <div class="code">
+        <code>./smash.py</code> 
+    </div>
+    this will compile the site and leave the final product in the specified folder and 
+    file.
+
+    <br/>
+    <br/>
+</p>
+
+</div>
+
+            <div id="pages_projects_htmlsmash_setup" class="page page-in">
+    <h1>
+        SmashSetup
+    </h1>
+
+    <hr />
+
+    <p>
+    &nbsp;&nbsp;&nbsp;&nbsp;The target project can be setup in any layout required by the 
+    user. For an example of a possible layout see the content folder of the CraigCode1010 
+    project found here. The tag file may is more layout specific, and should be setup as:
+
+    <div class="code">
+        <code>
+            {<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;tag:      [ID0]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;template: [TEMPLATE_PATH_AND_FILE0]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;part:     [PART_PATH_AND_FILE0]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;tag1: [VALUE_10]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;tag2: [VALUE_20]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;tag3: [VALUE_30]<br/>
+            }<br/>
+            {<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;tag:      [ID1]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;template: [TEMPLATE_PATH_AND_FILE1]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;part:     [PART_PATH_AND_FILE1]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;tag1: [VALUE_11]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;tag2: [VALUE_21]<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;tag3: [VALUE_31]<br/>
+            }
+        </code>
+    </div>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;The parts in brackets (including the brackets) should be 
+    replaced with the values for each. The system will ignore spaces, tabs, and extra new 
+    lines. The ID is the ID to look for in the compiling smash (without the '{{}}'). The 
+    template is the path and file for the template relative to the content path provided 
+    during configuration. The part is the path and file to use in the given template. This 
+    will fill the {{content}} tag in the template. If no part is needed 'None' (without 
+    quotes) must be used. Tag# are any other tags which must be replaced in the template and 
+    content (These tags are local to the template and content pair). Tags are intended to 
+    replace smaller parts of the pair like titles, ID tags, or classes. for a full example 
+    of this see tagFile.tg in the CraigCode1010 project.
+
+    <br/>
+    <br/>
+</p>
+
+</div>
+
+            <div id="pages_projects_htmlsmash_contributing" class="page page-in">
+    <h1>
+        Contributing
+    </h1>
+
+    <hr />
+
+    <p>
+    &nbsp;&nbsp;&nbsp;&nbsp;This project has been designed for and tested on my web site.
+    If you would like to use htmlSmash on other projects and find it needs some adjusting
+    to suit your use case, modify the project to search your needs (as well as the original
+    use case) and contribute your changes back. This project is meant to be as flexible and
+    simple as possible without being complex (as it is a simple application).
+
+    <br/>
+    <br/>
 </p>
 
 </div>

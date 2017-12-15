@@ -1,0 +1,27 @@
+<p>
+    <h3>Install</h3>
+
+    <ol>
+        <li>Install Git</li>
+        <li>Clone/Fork/Download the project from 
+            <a href="https://github.com/greenpro/HTMLsmash">The GitHub Project</a>.</li>
+        <li>Done.</li>
+    </ol>
+
+    <h3>Run</h3>
+
+    To run the project, go the into the folder downloaded. If you are running the project 
+    for the first time run 
+    <div class="code">
+        <code>./config.py</code> 
+    </div>
+    and fill out the questions, else skip this step.  Next run 
+    <div class="code">
+        <code>./smash.py</code> 
+    </div>
+    this will compile the site and leave the final product in the specified folder and 
+    file.
+
+    <br/>
+    <br/>
+</p>
