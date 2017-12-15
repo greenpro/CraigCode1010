@@ -1,0 +1,380 @@
+{
+    tag:      pages/home 
+    template: templates/page.pt
+    part:     content/pages/home.pt
+
+    id:    pages_home
+    title: Home
+}
+{
+    tag:      pages/projects
+    template: templates/page.pt
+    part:     content/pages/projects.pt
+
+    id:    pages_projects
+    title: Projects
+}
+{
+    tag:      pages/projects/sac
+    template: templates/page.pt
+    part:     content/pages/projects/sac.pt
+
+    id:    pages_projects_sac
+    title: Southern&nbsp;Arm&nbsp;Control
+}
+{
+    tag:      pages/projects/sac/structure
+    template: templates/page.pt
+    part:     content/pages/projects/sac/structure.pt
+
+    id:    pages_projects_sac_structure
+    title: Structure
+}
+{
+    tag:      pages/projects/sac/ik
+    template: templates/page.pt
+    part:     content/pages/projects/sac/ik.pt
+
+    id:    pages_projects_sac_ik
+    title: Inverse&nbsp;Kinematics
+}
+{
+    tag:      pages/projects/sac/install
+    template: templates/page.pt
+    part:     content/pages/projects/sac/install.pt
+
+    id:    pages_projects_sac_install
+    title: Installation
+}
+{
+    tag:      pages/projects/sac/install/latest
+    template: templates/page.pt
+    part:     content/pages/projects/sac/install/latest.pt
+
+    id:    pages_projects_sac_install_latest
+    title: Latest
+}
+{
+    tag:      pages/projects/sac/install/lunar
+    template: templates/page.pt
+    part:     content/pages/projects/sac/install/lunar.pt
+
+    id:    pages_projects_sac_install_lunar
+    title: Lunar
+}
+{
+    tag:      pages/projects/sac/install/kinetic
+    template: templates/page.pt
+    part:     content/pages/projects/sac/install/kinetic.pt
+
+    id:    pages_projects_sac_install_kinetic
+    title: Kinetic
+}
+{
+    tag:      pages/projects/sac/building
+    template: templates/page.pt
+    part:     content/pages/projects/sac/building.pt
+
+    id:    pages_projects_sac_building
+    title: Building
+}
+{
+    tag:      pages/projects/sac/running
+    template: templates/page.pt
+    part:     content/pages/projects/sac/running.pt
+
+    id:    pages_projects_sac_running
+    title: Running
+}
+{
+    tag:      pages/projects/sac/design
+    template: templates/page.pt
+    part:     content/pages/projects/sac/design.pt
+
+    id:    pages_projects_sac_design
+    title: Design&nbsp;Guidlines
+}
+{
+    tag:      pages/projects/sac/contributing
+    template: templates/page.pt
+    part:     content/pages/projects/sac/contributing.pt
+
+    id:    pages_projects_sac_contributing
+    title: Contributing
+}
+{
+    tag:      pages/projects/sac/issues
+    template: templates/page.pt
+    part:     content/pages/projects/sac/issues.pt
+
+    id:    pages_projects_sac_issues
+    title: Known&nbsp;Issues
+}
+{
+    tag:      pages/projects/sac/downloads
+    template: templates/page.pt
+    part:     content/pages/projects/sac/downloads.pt
+
+    id:    pages_projects_sac_downloads
+    title: Downloads
+}
+{
+    tag:      pages/projects/cc
+    template: templates/page.pt
+    part:     content/pages/projects/cc.pt
+
+    id:    pages_projects_cc
+    title: CraigCode1010
+}
+{
+    tag:      pages/about
+    template: templates/page.pt
+    part:     content/pages/about.pt
+
+    id:    pages_about
+    title: About
+}
+{
+    tag:      pages/rand
+    template: templates/page.pt
+    part:     content/pages/rand.pt
+
+    id:    pages_rand
+    title: Rand()
+}
+{
+    tag:      pages/rand/salsa
+    template: templates/page.pt
+    part:     content/pages/rand/salsa.pt
+
+    id:    pages_rand_salsa
+    title: Habanero&nbsp;Serrano&nbsp;Salsa
+}
+{
+    tag:      menus/home
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       
+    page_link:       'pages_home'
+    menu_link:       null
+    menu_link_level: 0
+    h_size:          2
+    text:            Home
+}
+{
+    tag:      menus/projects
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       
+    page_link:       'pages_projects'
+    menu_link:       'menus_projects'
+    menu_link_level: 0
+    h_size:          2
+    text:            Projects
+}
+{
+    tag:      menus/projects/sac
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-topic
+    page_link:       'pages_projects_sac'
+    menu_link:       'menus_projects_sac'
+    menu_link_level: 1
+    h_size:          3
+    text:            Southern&nbsp;Arm<br/>Control
+}
+{
+    tag:      menus/projects/sac/structure
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-sub-topic
+    page_link:       'pages_projects_sac_structure'
+    menu_link:       null
+    menu_link_level: 2
+    h_size:          4
+    text:            Structure
+}
+{
+    tag:      menus/projects/sac/ik
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-sub-topic
+    page_link:       'pages_projects_sac_ik'
+    menu_link:       null
+    menu_link_level: 2
+    h_size:          4
+    text:            Inverse&nbsp;Kinematics
+}
+{
+    tag:      menus/projects/sac/install
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-sub-topic
+    page_link:       'pages_projects_sac_install'
+    menu_link:       'menus_projects_sac_install'
+    menu_link_level: 2
+    h_size:          4
+    text:            Installation&nbsp;and<br/>Upgrading
+}
+{
+    tag:      menus/projects/sac/install/latest
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-sub-sub-topic
+    page_link:       'pages_projects_sac_install_latest'
+    menu_link:       null
+    menu_link_level: 3
+    h_size:          5
+    text:            Latest
+}
+{
+    tag:      menus/projects/sac/install/lunar
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-sub-sub-topic
+    page_link:       'pages_projects_sac_install_lunar'
+    menu_link:       null
+    menu_link_level: 3
+    h_size:          5
+    text:            Lunar
+}
+{
+    tag:      menus/projects/sac/install/kinetic
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-sub-sub-topic
+    page_link:       'pages_projects_sac_install_kinetic'
+    menu_link:       null
+    menu_link_level: 3
+    h_size:          5
+    text:            Kinetic
+}
+{
+    tag:      menus/projects/sac/building
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-sub-topic
+    page_link:       'pages_projects_sac_building'
+    menu_link:       null
+    menu_link_level: 2
+    h_size:          4
+    text:            Building
+}
+{
+    tag:      menus/projects/sac/running
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-sub-topic
+    page_link:       'pages_projects_sac_running'
+    menu_link:       null
+    menu_link_level: 2
+    h_size:          4
+    text:            Running
+}
+{
+    tag:      menus/projects/sac/design
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-sub-topic
+    page_link:       'pages_projects_sac_design'
+    menu_link:       null
+    menu_link_level: 2
+    h_size:          4
+    text:            Design
+}
+{
+    tag:      menus/projects/sac/contributing
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-sub-topic
+    page_link:       'pages_projects_sac_contributing'
+    menu_link:       null
+    menu_link_level: 2
+    h_size:          4
+    text:            Contributing
+}
+{
+    tag:      menus/projects/sac/issues
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-sub-topic
+    page_link:       'pages_projects_sac_issues'
+    menu_link:       null
+    menu_link_level: 2
+    h_size:          4
+    text:            Known&nbsp;Issues
+}
+{
+    tag:      menus/projects/sac/downloads
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-sub-topic
+    page_link:       'pages_projects_sac_downloads'
+    menu_link:       null
+    menu_link_level: 2
+    h_size:          4
+    text:            Downloads
+}
+{
+    tag:      menus/projects/cc
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-topic
+    page_link:       'pages_projects_cc'
+    menu_link:       null
+    menu_link_level: 1
+    h_size:          3
+    text:            CraigCode1010
+}
+{
+    tag:      menus/about
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       
+    page_link:       'pages_about'
+    menu_link:       null
+    menu_link_level: 0
+    h_size:          2
+    text:            About
+}
+{
+    tag:      menus/rand
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       
+    page_link:       'pages_rand'
+    menu_link:       'menus_rand_salsa'
+    menu_link_level: 0
+    h_size:          2
+    text:            Rand()
+}
+{
+    tag:      menus/rand/salsa
+    template: templates/menu_item.pt
+    part:     None
+
+    sub_class:       sub-topic
+    page_link:       'pages_rand_salsa'
+    menu_link:       null
+    menu_link_level: 1
+    h_size:          3
+    text:            Habanero-Serrano&nbsp;Salsa
+}
