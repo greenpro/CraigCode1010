@@ -3,7 +3,11 @@
 <html>
     <head>
         <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' />
-        <link href="craigCode.css" rel="stylesheet" />
+        {{scripts/css/main}}
+        {{scripts/css/header}}
+        {{scripts/css/content}}
+        {{scripts/css/footer}}
+        {{scripts/css/navigation}}
         <link rel="icon" type="image/png" href="icon.png" size="16x16" />
         <meta charset="utf-8" />
         <title>
@@ -100,8 +104,8 @@
 
         <!--script src="craigCode.js"></script-->
         <!-- Scripts -->
-        {{scripts/brain}}
-        {{scripts/circuit}}
-        {{scripts/navigation}}
+        {{scripts/js/brain}}
+        {{scripts/js/circuit}}
+        {{scripts/js/navigation}}
     </body>
 </html>

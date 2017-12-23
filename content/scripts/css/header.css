@@ -1,0 +1,34 @@
+.craig-code .header
+{
+    z-index: 2;
+    position: fixed;
+    height: 75px;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    box-shadow: 0 0 20px #000000;
+}
+
+.craig-code .header h1
+{
+    font-family: "Orbitron";
+    font-size: 50px;
+    
+    z-index: 2;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    padding: 0 0 0 0;
+    margin: 0 0 0 10px;
+}
+
+.craig-code .header canvas
+{
+    background-color: #30C030;
+
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

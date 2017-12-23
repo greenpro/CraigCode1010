@@ -1,0 +1,26 @@
+.craig-code .footer
+{
+    background-color: #30C030;
+
+    padding: 0 0 0 0;
+
+    z-index: 2;
+    position: fixed;
+    height: 25px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    box-shadow: 0 0 20px #000000;
+}
+
+.craig-code .footer h4
+{
+    font-family: "Orbitron";
+    font-size: 15px;
+    text-align: right;
+
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    margin: 0 10px 0 10px;
+}

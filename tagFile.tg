@@ -459,17 +459,42 @@
     text:            Habanero-Serrano&nbsp;Salsa
 }
 {
-    tag:      scripts/circuit
+    tag:      scripts/js/circuit
     template: templates/script_javascript.pt
-    part:     content/scripts/circuit.pt
+    part:     content/scripts/js/circuit.js
 }
 {
-    tag:      scripts/brain
+    tag:      scripts/js/brain
     template: templates/script_javascript.pt
-    part:     content/scripts/brain.pt
+    part:     content/scripts/js/brain.js
 }
 {
-    tag:      scripts/navigation
+    tag:      scripts/js/navigation
     template: templates/script_javascript.pt
-    part:     content/scripts/navigation.pt
+    part:     content/scripts/js/navigation.js
+}
+{
+    tag:      scripts/css/main
+    template: templates/script_css.pt
+    part:     content/scripts/css/main.css
+}
+{
+    tag:      scripts/css/navigation
+    template: templates/script_css.pt
+    part:     content/scripts/css/navigation.css
+}
+{
+    tag:      scripts/css/header
+    template: templates/script_css.pt
+    part:     content/scripts/css/header.css
+}
+{
+    tag:      scripts/css/content
+    template: templates/script_css.pt
+    part:     content/scripts/css/content.css
+}
+{
+    tag:      scripts/css/footer
+    template: templates/script_css.pt
+    part:     content/scripts/css/footer.css
 }

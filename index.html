@@ -3,7 +3,354 @@
 <html>
     <head>
         <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' />
-        <link href="craigCode.css" rel="stylesheet" />
+        <style>
+    .craig-code
+{
+    font-family: Helvetica;
+
+    margin: 0 0 0 0;
+    width: 100%;
+}
+
+</style>
+
+        <style>
+    .craig-code .header
+{
+    z-index: 2;
+    position: fixed;
+    height: 75px;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    box-shadow: 0 0 20px #000000;
+}
+
+.craig-code .header h1
+{
+    font-family: "Orbitron";
+    font-size: 50px;
+    
+    z-index: 2;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    padding: 0 0 0 0;
+    margin: 0 0 0 10px;
+}
+
+.craig-code .header canvas
+{
+    background-color: #30C030;
+
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+</style>
+
+        <style>
+    @keyframes pagein
+{
+    from
+    {
+        -webkit-transform: rotateX(90deg);
+        transform: rotateX(90deg);
+    }
+
+    to
+    {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+    }
+}
+
+.craig-code .page-in
+{
+    -webkit-animation: pagein 0.3s steps(100) forwards;
+    animation: pagein 0.3s steps(100) forwards;
+}
+
+.craig-code .content
+{
+    z-index: 0;
+    position: fixed;
+    width: 80%;
+    top: 75px;
+    right: 0px;
+    bottom: 25px;
+    
+    overflow-y: auto;
+}
+
+.craig-code .content .page
+{
+    display: none;
+
+    margin: 30px;
+    font-size: 18pt;
+}
+
+.craig-code .content .page .center
+{
+    display: block;
+    margin: auto;
+}
+
+.craig-code .content .page table
+{
+    border-collapse: collapse;
+
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.craig-code .content .page table tr th
+{
+    border-style: solid;
+    border-color: #000000;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 2px;
+
+    font-style: bold;
+}
+
+.craig-code .content .page table tr td
+{
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+}
+
+.craig-code .content .page .image
+{
+    box-shadow: 0 0 10px inset;
+    border-radius: 5px;
+
+    width: 100%;
+    max-width: 1500px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.craig-code .content .image hr
+{
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 0;
+    margin-top: 0;
+}
+
+.craig-code .content .page .image .title
+{
+    width:90%;
+    padding: 5px 5% 5px 5%;
+
+    text-align: center;
+}
+
+.craig-code .content .page .image img
+{
+    width: 90%;
+    margin: 5px 5% 5px 5%;
+}
+
+.craig-code .content .page .image .group
+{
+    width: 90%;
+    margin: 5px 5% 20px 5%;
+}
+
+.craig-code .content .page .image .group img
+{
+    width: 49.6%;
+    margin: 0;
+}
+
+.craig-code .content .page .image .caption
+{
+    width: 90%;
+    padding: 5px 5% 10px 5%;
+}
+
+.craig-code .content .page .variable
+{
+    height: 1em;
+}
+
+.craig-code .content .page .equation
+{
+    box-shadow: 0 0 10px inset;
+    border-radius: 5px;
+
+    padding: 10px;
+    margin: 10px 50px 10px 50px;
+}
+
+.craig-code .content .page .equation .img
+{
+    height: 20px;
+}
+
+.craig-code .content .page .equation .imgDouble
+{
+    height: 40px;
+}
+
+.craig-code .content .page .equation .imgDoubleHalf
+{
+    height: 47px;
+}
+
+.craig-code .content .page .equation .imgTripple
+{
+    height: 59px;
+}
+
+.craig-code .content .page .code
+{
+    padding: 10px;
+    margin: 5px;
+
+    box-shadow: 0 0 5px inset;
+    border-radius: 5px;
+}
+
+</style>
+
+        <style>
+    .craig-code .footer
+{
+    background-color: #30C030;
+
+    padding: 0 0 0 0;
+
+    z-index: 2;
+    position: fixed;
+    height: 25px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    box-shadow: 0 0 20px #000000;
+}
+
+.craig-code .footer h4
+{
+    font-family: "Orbitron";
+    font-size: 15px;
+    text-align: right;
+
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    margin: 0 10px 0 10px;
+}
+
+</style>
+
+        <style>
+    .craig-code .navigation
+{
+    z-index: 1;
+    position: fixed;
+    width: 20%;
+    top: 75px;
+    left: 0px;
+    bottom: 25px;
+
+    box-shadow: 0 0 20px #000000;
+    
+    overflow-y: auto;
+}
+
+.craig-code .navigation .pages
+{
+    margin: 10px;
+}
+
+.craig-code .navigation .pages .menu-group
+{
+    display: none;
+}
+
+.craig-code .navigation .pages .topic
+{
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+}
+
+@-webkit-keyframes menuhover
+{
+    from 
+    { 
+        box-shadow: 0 0 0 #000000; 
+        font-size: 100%;
+        background-color: #FFFFFF;
+    }
+
+    to 
+    { 
+        box-shadow: 0px 10px 20px #777777;
+        font-size: 110%;
+        background-color: #EEEEEE;
+    }
+}
+
+@keyframes menuhover
+{
+    from 
+    { 
+        box-shadow: 0 0 0 #000000; 
+        font-size: 100%;
+        background-color: #FFFFFF;
+    }
+
+    to 
+    { 
+        box-shadow: 0px 10px 20px #777777;
+        font-size: 110%;
+        background-color: #EEEEEE;
+    }
+}
+
+.craig-code .navigation .pages .topic:hover
+{
+    z-index: 4;
+    
+    -webkit-animation: menuhover 0.1s steps(100) forwards;
+    animation: menuhover 0.1s steps(100) forwards;
+}
+
+.craig-code .navigation .pages .topic .text
+{
+    margin: 20px;
+}
+
+.craig-code .navigation .pages .sub-topic
+{
+    margin: 0 0 0 10px
+}
+
+.craig-code .navigation .pages .sub-sub-topic
+{
+    margin: 0 0 0 20px
+}
+
+.craig-code .navigation .pages .sub-sub-sub-topic
+{
+    margin: 0 0 0 30px
+}
+
+</style>
+
         <link rel="icon" type="image/png" href="icon.png" size="16x16" />
         <meta charset="utf-8" />
         <title>
