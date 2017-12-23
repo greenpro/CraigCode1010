@@ -593,3 +593,5 @@ function circuitDraw()
     ctx.fillRect(933, 27, 5, 5);
     ctx.fillRect(938, 20, 5, 5);
 }
+
+circuitDraw();

@@ -318,3 +318,5 @@ function brainDraw()
     c.lineWidth = wid2;
     c.stroke();
 }
+
+brainDraw();

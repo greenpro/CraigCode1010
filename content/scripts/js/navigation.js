@@ -113,7 +113,6 @@ function setInitPage()
 
         //case default:
         //    // TODO :: Make this page and add it to the system.
-        //    // TODO :: Find out why clicking anothe home button does not collapse all other menus.
         //    curPage = "pages_not_found";
         //    break;
     }
@@ -144,9 +143,6 @@ function showMenu(subMenu, level)
     curMenu = subMenu;
     curLevel = level;
     // display the sub menu
-    console.log(curSubMenu);
-    console.log(level);
-    console.log(subMenu)
     if (curSubMenu && level == 0)
         document.getElementById(curSubMenu).style.display = "none";
 
@@ -176,7 +172,4 @@ function showMenu(subMenu, level)
     }
 }
 
-// TODO :: move this to draw dynamically to when the page is shown.
-brainDraw();
-circuitDraw();
 setInitPage();
