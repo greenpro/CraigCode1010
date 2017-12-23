@@ -458,3 +458,18 @@
     h_size:          3
     text:            Habanero-Serrano&nbsp;Salsa
 }
+{
+    tag:      scripts/circuit
+    template: templates/script_javascript.pt
+    part:     content/scripts/circuit.pt
+}
+{
+    tag:      scripts/brain
+    template: templates/script_javascript.pt
+    part:     content/scripts/brain.pt
+}
+{
+    tag:      scripts/navigation
+    template: templates/script_javascript.pt
+    part:     content/scripts/navigation.pt
+}
