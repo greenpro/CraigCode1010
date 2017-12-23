@@ -5,6 +5,7 @@ var curLevel = 0
 var curSubMenu = null;
 var curSubSubMenu = null;
 var curSubSubSubMenu = null;
+
 function setInitPage()
 {
     var url = location.href.split("#");
@@ -135,7 +136,7 @@ function showPage(page)
 
 function showMenu(subMenu, level)
 {
-    if (subMenu == null || curMenu == subMenu)
+    if (curMenu == subMenu)
     {
         return;
     }
@@ -143,7 +144,10 @@ function showMenu(subMenu, level)
     curMenu = subMenu;
     curLevel = level;
     // display the sub menu
-    if (curSubMenu && level == 0 && curLevel != 0)
+    console.log(curSubMenu);
+    console.log(level);
+    console.log(subMenu)
+    if (curSubMenu && level == 0)
         document.getElementById(curSubMenu).style.display = "none";
 
     if (curSubSubMenu && level <= 1)
