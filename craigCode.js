@@ -915,6 +915,7 @@ function circuitDraw()
     ctx.fillRect(938, 20, 5, 5);
 }
 
+var baseUrl;
 var curPage = "pages_home";
 var curMenu = "menus_home";
 var curLevel = 0
@@ -924,19 +925,113 @@ var curSubSubSubMenu = null;
 function setInitPage()
 {
     var url = location.href.split("#");
+    baseUrl = url[0];
 
-    if (url.includes("rand"))
+    if (url.length == 1)
     {
-        curPage = "pages_rand";
-        showMenu("menus_rand", 0);
-        showMenu("menus_rand_salsa", 0);
+        showPage(curPage);
+        return;
     }
 
-    if (url.includes("salsa"))
+    curPage = url[1]
+    switch (curPage)
     {
-        curPage = "pages_rand_salsa";
-        showMenu("menus_rand", 0);
-        showMenu("menus_rand_salsa", 1);
+        case "pages_home":
+            break;
+
+        case "pages_projects":
+            showMenu("menus_projects", 0, true);
+            break;
+        case "pages_projects_sac":
+            showMenu("menus_projects", 0);
+            showMenu("menus_projects_sac", 1);
+            break;
+        case "pages_projects_sac_structure":
+            showMenu("menus_projects", 0);
+            showMenu("menus_projects_sac", 1);
+            break;
+        case "pages_projects_sac_ik":
+            showMenu("menus_projects", 0);
+            showMenu("menus_projects_sac", 1);
+            break;
+        case "pages_projects_sac_install":
+            showMenu("menus_projects", 0);
+            showMenu("menus_projects_sac", 1);
+            showMenu("menus_projects_sac_install", 2);
+            break;
+        case "pages_projects_sac_install_latest":
+            showMenu("menus_projects", 0);
+            showMenu("menus_projects_sac", 1);
+            showMenu("menus_projects_sac_install", 2);
+            break;
+        case "pages_projects_sac_install_lunar":
+            showMenu("menus_projects", 0);
+            showMenu("menus_projects_sac", 1);
+            showMenu("menus_projects_sac_install", 2);
+            break;
+        case "pages_projects_sac_install_kinetic":
+            showMenu("menus_projects", 0);
+            showMenu("menus_projects_sac", 1);
+            showMenu("menus_projects_sac_install", 2);
+            break;
+        case "pages_projects_sac_building":
+            showMenu("menus_projects", 0);
+            showMenu("menus_projects_sac", 1);
+            break;
+        case "pages_projects_sac_running":
+            showMenu("menus_projects", 0);
+            showMenu("menus_projects_sac", 1);
+            break;
+        case "pages_projects_sac_design":
+            showMenu("menus_projects", 0);
+            showMenu("menus_projects_sac", 1);
+            break;
+        case "pages_projects_sac_contributing":
+            showMenu("menus_projects", 0);
+            showMenu("menus_projects_sac", 1);
+            break;
+        case "pages_projects_sac_issues":
+            showMenu("menus_projects", 0);
+            showMenu("menus_projects_sac", 1);
+            break;
+        case "pages_projects_sac_downloads":
+            showMenu("menus_projects", 0);
+            showMenu("menus_projects_sac", 1);
+            break;
+        case "pages_projects_cc":
+            showMenu("menus_projects", 0);
+            break;
+
+        case "pages_projects_htmlsmash":
+            showMenu("menus_projects", 0);
+            showMenu("menus_projects_htmlsmash", 1);
+            break;
+        case "pages_projects_htmlsmash_installandrun":
+            showMenu("menus_projects", 0);
+            showMenu("menus_projects_htmlsmash", 1);
+            break;
+        case "pages_projects_htmlsmash_setup":
+            showMenu("menus_projects", 0);
+            showMenu("menus_projects_htmlsmash", 1);
+            break;
+        case "pages_projects_htmlsmash_contributing":
+            showMenu("menus_projects", 0);
+            showMenu("menus_projects_htmlsmash", 1);
+            break;
+
+        case "pages_about":
+            break;
+
+        case "pages_rand":
+        case "rand":
+            showMenu("menus_rand", 0);
+            break;
+
+        //case default:
+        //    // TODO :: Make this page and add it to the system.
+        //    // TODO :: Find out why clicking anothe home button does not collapse all other menus.
+        //    curPage = "pages_not_found";
+        //    break;
     }
 
     showPage(curPage);
@@ -944,6 +1039,8 @@ function setInitPage()
 
 function showPage(page)
 {
+    location.href = baseUrl + "#" + page;
+
     var oldpage = document.getElementById(curPage);
     oldpage.style.display = "none";
 
@@ -974,7 +1071,7 @@ function showMenu(subMenu, level)
 
     if (subMenu)
         document.getElementById(subMenu).style.display = "block";
-    
+
     if (level == 0)
     {
         curSubMenu = subMenu;
