@@ -175,14 +175,6 @@
     title: Rand()
 }
 {
-    tag:      pages/rand/salsa
-    template: templates/page.pt
-    part:     content/pages/rand/salsa.pt
-
-    id:    pages_rand_salsa
-    title: Habanero&nbsp;Serrano&nbsp;Salsa
-}
-{
     tag:      menus/home
     template: templates/menu_item.pt
     part:     None
