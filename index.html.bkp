@@ -554,7 +554,7 @@
 
                 <div id="menus_rand" class="menu-group page-in">
                     <div class="topic ">
-    <div class="text" onclick="showPage('pages_rand'); showMenu('menus_rand', 0)">
+    <div class="text" onclick="showPage('pages_rand'); showMenu('menus_rand_salsa', 0)">
         <h2>
             Rand()
         </h2>
@@ -2496,7 +2496,7 @@ be fixed in the next version).
         </div>
 
         <div class="footer">
-            <h4>&copy; Craig Christensen 2017 - 2018</h4>
+            <h4>&copy; Craig Christensen 2017</h4>
         </div>
 
         <!--script src="craigCode.js"></script-->
@@ -3436,7 +3436,6 @@ var curLevel = 0
 var curSubMenu = null;
 var curSubSubMenu = null;
 var curSubSubSubMenu = null;
-var randShown = false;
 
 function setInitPage()
 {
@@ -3540,7 +3539,6 @@ function setInitPage()
 
         case "pages_rand":
         case "rand":
-	    randShown = true;
             showMenu("menus_rand", 0);
             break;
 
@@ -3568,8 +3566,6 @@ function showPage(page)
 
 function showMenu(subMenu, level)
 {
-    console.log(curMenu)
-    console.log(subMenu)
     if (curMenu == subMenu)
     {
         return;

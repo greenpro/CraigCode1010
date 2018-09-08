@@ -5,6 +5,7 @@ var curLevel = 0
 var curSubMenu = null;
 var curSubSubMenu = null;
 var curSubSubSubMenu = null;
+var randShown = false;
 
 function setInitPage()
 {
@@ -108,6 +109,7 @@ function setInitPage()
 
         case "pages_rand":
         case "rand":
+	    randShown = true;
             showMenu("menus_rand", 0);
             break;
 
@@ -135,6 +137,8 @@ function showPage(page)
 
 function showMenu(subMenu, level)
 {
+    console.log(curMenu)
+    console.log(subMenu)
     if (curMenu == subMenu)
     {
         return;

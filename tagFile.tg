@@ -441,22 +441,10 @@
 
     sub_class:       
     page_link:       'pages_rand'
-    menu_link:       'menus_rand_salsa'
+    menu_link:       'menus_rand'
     menu_link_level: 0
     h_size:          2
     text:            Rand()
-}
-{
-    tag:      menus/rand/salsa
-    template: templates/menu_item.pt
-    part:     None
-
-    sub_class:       sub-topic
-    page_link:       'pages_rand_salsa'
-    menu_link:       null
-    menu_link_level: 1
-    h_size:          3
-    text:            Habanero-Serrano&nbsp;Salsa
 }
 {
     tag:      scripts/js/circuit
